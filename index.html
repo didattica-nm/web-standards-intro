@@ -2,14 +2,14 @@
 	<meta name="generator" content="Hugo 0.157.0">
     <meta charset="utf-8">
 <title>Web Intro - HTML, CSS, JS</title>
-<meta name="description" content="A Hugo theme for creating Reveal.js presentations">
+<meta name="description" content="Introduzione alla programmazione Web">
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="./reveal-js/dist/reset.css">
 <link rel="stylesheet" href="./reveal-js/dist/reveal.css">
-  <link rel="stylesheet" href="./css/custom-theme.min.d9783bf080c19a71d7ca8cd7bc05183b97185f91dfa17c5945fc8119d3fe1e3a.css" id="theme"><link rel="stylesheet" href="./highlight-js/default.min.css">
+  <link rel="stylesheet" href="./css/custom-theme.min.6de815a7e8d8c6cf3e7b33d10c4299597c2ac7919d94833e15751693b9ee3957.css" id="theme"><link rel="stylesheet" href="./highlight-js/default.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/gh/DanySK/css-blur-animation/blur.css" rel="stylesheet" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -25,14 +25,14 @@
       <div class="slides">
   
 
-    <section><div style="max-width: fit-content; margin-inline: auto;" class="position-relative text-center accentify-top-right">
+    <section><h5 id="istituto-tecnico-economico-giovanni-agnelli--cesenatico">Istituto Tecnico Economico “Giovanni Agnelli” <strong>@</strong> Cesenatico</h5>
+<div style="max-width: fit-content; margin-inline: auto;" class="position-relative text-center accentify-top-right">
 <h1 id="introduzione-al-web">Introduzione al <strong>Web</strong></h1>
 </div>
 <h2 id="i-web-standard-html-css-javascript">I web standard: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong></h2>
-<h3 id="-typescript-javascript-tipizzato">+ <strong>TypeScript</strong>: JavaScript tipizzato</h3>
 <small>
 <p>A cura di Nicholas Magi</p>
-<p><code>nicholas.magi[at]ispascalcomandini.it</code></p>
+<p><code>nicholasmagi[at]davincicesenatico.it</code></p>
 </small>
 <br>
 <br>
@@ -47,25 +47,120 @@
 
 
 <section data-shortcode-section="">
-<h1 id="il-web">Il Web</h1>
+<h4 id="parte-01">Parte <strong>#01</strong>.</h4>
+<h1 id="il-web"><strong>Il Web</strong></h1>
+<h2 id="definizione-architettura-interazioni">Definizione, architettura, interazioni.</h2>
+</section><section>
+<br>
+<br>
+<br>
+<h2 id="il-web-1">Il Web</h2>
 <div class="callout cite">
     <div class="callout-background py-4 px-5"><div class="callout-content"><p>Il <strong>web</strong> (abbreviazione di <em>world wide web</em>, ‘ragnatela mondiale’, spesso indicato brevemente anche come www) è un sistema di <strong>interconnessione tra documenti</strong> basato sull’infrastruttura di Internet che permette l’accesso a tutta l’informazione disponibile su computer collegati in rete.</p>
 </div><div class="callout-footer d-flex justify-content-end my-3 fs-1"><small><a href="https://www.treccani.it/enciclopedia/web_%28Enciclopedia-Italiana%29/" target="_blank"><i class="fa-solid fa-link pe-2"></i>[Enciclopedia Treccani]</a></small></div></div>
 </div>
 </section><section>
-<h3 id="sul-web-possono-essere-disponibili-qualsiasi-tipo-di-documenti">Sul <strong>web</strong> possono essere disponibili <strong>qualsiasi tipo di documenti</strong>.</h3>
+<h3 id="sul-web-possono-essere-disponibili--qualsiasi-tipo-di-documenti">Sul <strong>web</strong> possono essere disponibili <br> <strong>qualsiasi tipo di documenti</strong>.</h3>
 <p>Immagini, video, audio, documenti Word, PDF…</p>
 </section><section>
-<h3 id="architettura-client-server">Architettura <strong>Client-Server</strong></h3>
-<img class="w-50" src="imgs/web-arch.png">
+<h2 id="come-interagiamo-con-il-web">Come <strong>interagiamo</strong> con il <strong>web</strong>?</h2>
+<div class="callout warning">
+    <div class="callout-background py-4 px-5"><div class="callout-content"><p><strong>browser</strong> $\neq$ <strong>motore di ricerca</strong>!</p>
+</div></div>
+</div>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><h3 id="browser">Browser</h3>
+<blockquote>
+<p>“<strong>Programma</strong> - software - installabile su un dispositivo che si <strong>interfaccia con il web</strong> e permette di <strong>visualizzare ciò che cerchi</strong>.”</p>
+</blockquote>
+<br>
+<ul>
+<li>esempio: Google Chrome, Apple Safari, Microsoft Edge, Mozilla Firefox, Brave, Opera, <strong>Tor Browser</strong>…</li>
+</ul>
+</div>
+<div class="col "><h3 id="motore-di-ricerca">Motore di ricerca</h3>
+<blockquote>
+<p>“<strong>Servizio</strong> fruibile da browser che permette, mediante <strong>parole chiave</strong> e strumenti specializzati, di cercare risorse sul web.”</p>
+</blockquote>
+<br>
+<ul>
+<li>esempio: Google, DuckDuckGo, Yahoo, Bing…</li>
+</ul>
+</div>
+</div>
+</div>
 </section><section>
-<h3 id="cosa-succede-quando-si-fa-una-richiesta-sul-web">Cosa succede quando si fa una richiesta sul web?</h3>
+<h3 id="architettura-client-server">Architettura <strong>Client-Server</strong></h3>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><h4 id="in-generale">In generale</h4>
+<img src="imgs/web-arch.png">
+</div>
+<div class="col "><h4 id="in-particolare">In particolare</h4>
+<img src="imgs/web-arch-2.0.png">
+</div>
+</div>
+</div>
+</section><section>
+<h3 id="cosa-succede-quando-si-fa-una-richiesta-sul-web--1">Cosa succede quando si fa una richiesta sul web? / 1</h3>
+<img src="imgs/lookup.png" class="w-75">
+<small>
+<p>Da <em>MDN Web Docs, Populating the page: how browsers work</em> - <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work">https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work</a></p>
+</small>
+</section><section>
+<h3 id="cosa-succede-quando-si-fa-una-richiesta-sul-web--2">Cosa succede quando si fa una richiesta sul web? / 2</h3>
 <div class="mermaid" data-processed="true" pre-rendered="true"><svg aria-roledescription="sequence" role="graphics-document document" viewBox="-50 -10 675 397" style="max-width: 675px;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="my-svg"><g><rect class="actor actor-bottom" ry="3" rx="3" name="Server" height="65" width="150" stroke="#666" fill="#eaeaea" y="311" x="425"></rect><text style="text-anchor: middle; font-size: 16px; font-weight: 400;" class="actor actor-box" alignment-baseline="central" dominant-baseline="central" y="343.5" x="500"><tspan dy="0" x="500">Server</tspan></text></g><g><rect class="actor actor-bottom" ry="3" rx="3" name="DNS" height="65" width="150" stroke="#666" fill="#eaeaea" y="311" x="225"></rect><text style="text-anchor: middle; font-size: 16px; font-weight: 400;" class="actor actor-box" alignment-baseline="central" dominant-baseline="central" y="343.5" x="300"><tspan dy="0" x="300">DNS</tspan></text></g><g></g><g><line name="Server" stroke="#999" stroke-width="0.5px" class="actor-line 200" y2="311" x2="500" y1="65" x1="500" id="actor2"></line><g id="root-2"><rect class="actor actor-top" ry="3" rx="3" name="Server" height="65" width="150" stroke="#666" fill="#eaeaea" y="0" x="425"></rect><text style="text-anchor: middle; font-size: 16px; font-weight: 400;" class="actor actor-box" alignment-baseline="central" dominant-baseline="central" y="32.5" x="500"><tspan dy="0" x="500">Server</tspan></text></g></g><g><line name="DNS" stroke="#999" stroke-width="0.5px" class="actor-line 200" y2="311" x2="300" y1="65" x1="300" id="actor1"></line><g id="root-1"><rect class="actor actor-top" ry="3" rx="3" name="DNS" height="65" width="150" stroke="#666" fill="#eaeaea" y="0" x="225"></rect><text style="text-anchor: middle; font-size: 16px; font-weight: 400;" class="actor actor-box" alignment-baseline="central" dominant-baseline="central" y="32.5" x="300"><tspan dy="0" x="300">DNS</tspan></text></g></g><g><line name="Client (Browser)" stroke="#999" stroke-width="0.5px" class="actor-line 200" y2="311" x2="75" y1="80" x1="75" id="actor0"></line></g><style>#my-svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:1px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#333333;stroke:#333333;}#my-svg .marker.cross{stroke:#333333;}#my-svg svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#my-svg p{margin:0;}#my-svg .actor{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}#my-svg text.actor&gt;tspan{fill:black;stroke:none;}#my-svg .actor-line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);}#my-svg .messageLine0{stroke-width:1.5;stroke-dasharray:none;stroke:#333;}#my-svg .messageLine1{stroke-width:1.5;stroke-dasharray:2,2;stroke:#333;}#my-svg #arrowhead path{fill:#333;stroke:#333;}#my-svg .sequenceNumber{fill:white;}#my-svg #sequencenumber{fill:#333;}#my-svg #crosshead path{fill:#333;stroke:#333;}#my-svg .messageText{fill:#333;stroke:none;}#my-svg .labelBox{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}#my-svg .labelText,#my-svg .labelText&gt;tspan{fill:black;stroke:none;}#my-svg .loopText,#my-svg .loopText&gt;tspan{fill:black;stroke:none;}#my-svg .loopLine{stroke-width:2px;stroke-dasharray:2,2;stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);}#my-svg .note{stroke:#aaaa33;fill:#fff5ad;}#my-svg .noteText,#my-svg .noteText&gt;tspan{fill:black;stroke:none;}#my-svg .activation0{fill:#f4f4f4;stroke:#666;}#my-svg .activation1{fill:#f4f4f4;stroke:#666;}#my-svg .activation2{fill:#f4f4f4;stroke:#666;}#my-svg .actorPopupMenu{position:absolute;}#my-svg .actorPopupMenuPanel{position:absolute;fill:#ECECFF;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);filter:drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));}#my-svg .actor-man line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}#my-svg .actor-man circle,#my-svg line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;stroke-width:2px;}#my-svg :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g></g><defs><symbol height="24" width="24" id="computer"><path d="M2 2v13h20v-13h-20zm18 11h-16v-9h16v9zm-10.228 6l.466-1h3.524l.467 1h-4.457zm14.228 3h-24l2-6h2.104l-1.33 4h18.45l-1.297-4h2.073l2 6zm-5-10h-14v-7h14v7z" transform="scale(.5)"></path></symbol></defs><defs><symbol clip-rule="evenodd" fill-rule="evenodd" id="database"><path d="M12.258.001l.256.004.255.005.253.008.251.01.249.012.247.015.246.016.242.019.241.02.239.023.236.024.233.027.231.028.229.031.225.032.223.034.22.036.217.038.214.04.211.041.208.043.205.045.201.046.198.048.194.05.191.051.187.053.183.054.18.056.175.057.172.059.168.06.163.061.16.063.155.064.15.066.074.033.073.033.071.034.07.034.069.035.068.035.067.035.066.035.064.036.064.036.062.036.06.036.06.037.058.037.058.037.055.038.055.038.053.038.052.038.051.039.05.039.048.039.047.039.045.04.044.04.043.04.041.04.04.041.039.041.037.041.036.041.034.041.033.042.032.042.03.042.029.042.027.042.026.043.024.043.023.043.021.043.02.043.018.044.017.043.015.044.013.044.012.044.011.045.009.044.007.045.006.045.004.045.002.045.001.045v17l-.001.045-.002.045-.004.045-.006.045-.007.045-.009.044-.011.045-.012.044-.013.044-.015.044-.017.043-.018.044-.02.043-.021.043-.023.043-.024.043-.026.043-.027.042-.029.042-.03.042-.032.042-.033.042-.034.041-.036.041-.037.041-.039.041-.04.041-.041.04-.043.04-.044.04-.045.04-.047.039-.048.039-.05.039-.051.039-.052.038-.053.038-.055.038-.055.038-.058.037-.058.037-.06.037-.06.036-.062.036-.064.036-.064.036-.066.035-.067.035-.068.035-.069.035-.07.034-.071.034-.073.033-.074.033-.15.066-.155.064-.16.063-.163.061-.168.06-.172.059-.175.057-.18.056-.183.054-.187.053-.191.051-.194.05-.198.048-.201.046-.205.045-.208.043-.211.041-.214.04-.217.038-.22.036-.223.034-.225.032-.229.031-.231.028-.233.027-.236.024-.239.023-.241.02-.242.019-.246.016-.247.015-.249.012-.251.01-.253.008-.255.005-.256.004-.258.001-.258-.001-.256-.004-.255-.005-.253-.008-.251-.01-.249-.012-.247-.015-.245-.016-.243-.019-.241-.02-.238-.023-.236-.024-.234-.027-.231-.028-.228-.031-.226-.032-.223-.034-.22-.036-.217-.038-.214-.04-.211-.041-.208-.043-.204-.045-.201-.046-.198-.048-.195-.05-.19-.051-.187-.053-.184-.054-.179-.056-.176-.057-.172-.059-.167-.06-.164-.061-.159-.063-.155-.064-.151-.066-.074-.033-.072-.033-.072-.034-.07-.034-.069-.035-.068-.035-.067-.035-.066-.035-.064-.036-.063-.036-.062-.036-.061-.036-.06-.037-.058-.037-.057-.037-.056-.038-.055-.038-.053-.038-.052-.038-.051-.039-.049-.039-.049-.039-.046-.039-.046-.04-.044-.04-.043-.04-.041-.04-.04-.041-.039-.041-.037-.041-.036-.041-.034-.041-.033-.042-.032-.042-.03-.042-.029-.042-.027-.042-.026-.043-.024-.043-.023-.043-.021-.043-.02-.043-.018-.044-.017-.043-.015-.044-.013-.044-.012-.044-.011-.045-.009-.044-.007-.045-.006-.045-.004-.045-.002-.045-.001-.045v-17l.001-.045.002-.045.004-.045.006-.045.007-.045.009-.044.011-.045.012-.044.013-.044.015-.044.017-.043.018-.044.02-.043.021-.043.023-.043.024-.043.026-.043.027-.042.029-.042.03-.042.032-.042.033-.042.034-.041.036-.041.037-.041.039-.041.04-.041.041-.04.043-.04.044-.04.046-.04.046-.039.049-.039.049-.039.051-.039.052-.038.053-.038.055-.038.056-.038.057-.037.058-.037.06-.037.061-.036.062-.036.063-.036.064-.036.066-.035.067-.035.068-.035.069-.035.07-.034.072-.034.072-.033.074-.033.151-.066.155-.064.159-.063.164-.061.167-.06.172-.059.176-.057.179-.056.184-.054.187-.053.19-.051.195-.05.198-.048.201-.046.204-.045.208-.043.211-.041.214-.04.217-.038.22-.036.223-.034.226-.032.228-.031.231-.028.234-.027.236-.024.238-.023.241-.02.243-.019.245-.016.247-.015.249-.012.251-.01.253-.008.255-.005.256-.004.258-.001.258.001zm-9.258 20.499v.01l.001.021.003.021.004.022.005.021.006.022.007.022.009.023.01.022.011.023.012.023.013.023.015.023.016.024.017.023.018.024.019.024.021.024.022.025.023.024.024.025.052.049.056.05.061.051.066.051.07.051.075.051.079.052.084.052.088.052.092.052.097.052.102.051.105.052.11.052.114.051.119.051.123.051.127.05.131.05.135.05.139.048.144.049.147.047.152.047.155.047.16.045.163.045.167.043.171.043.176.041.178.041.183.039.187.039.19.037.194.035.197.035.202.033.204.031.209.03.212.029.216.027.219.025.222.024.226.021.23.02.233.018.236.016.24.015.243.012.246.01.249.008.253.005.256.004.259.001.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241-.014.237-.016.233-.018.231-.021.226-.021.224-.024.22-.026.216-.027.212-.028.21-.031.205-.031.202-.034.198-.034.194-.036.191-.037.187-.039.183-.04.179-.04.175-.042.172-.043.168-.044.163-.045.16-.046.155-.046.152-.047.148-.048.143-.049.139-.049.136-.05.131-.05.126-.05.123-.051.118-.052.114-.051.11-.052.106-.052.101-.052.096-.052.092-.052.088-.053.083-.051.079-.052.074-.052.07-.051.065-.051.06-.051.056-.05.051-.05.023-.024.023-.025.021-.024.02-.024.019-.024.018-.024.017-.024.015-.023.014-.024.013-.023.012-.023.01-.023.01-.022.008-.022.006-.022.006-.022.004-.022.004-.021.001-.021.001-.021v-4.127l-.077.055-.08.053-.083.054-.085.053-.087.052-.09.052-.093.051-.095.05-.097.05-.1.049-.102.049-.105.048-.106.047-.109.047-.111.046-.114.045-.115.045-.118.044-.12.043-.122.042-.124.042-.126.041-.128.04-.13.04-.132.038-.134.038-.135.037-.138.037-.139.035-.142.035-.143.034-.144.033-.147.032-.148.031-.15.03-.151.03-.153.029-.154.027-.156.027-.158.026-.159.025-.161.024-.162.023-.163.022-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.011-.178.01-.179.008-.179.008-.181.006-.182.005-.182.004-.184.003-.184.002h-.37l-.184-.002-.184-.003-.182-.004-.182-.005-.181-.006-.179-.008-.179-.008-.178-.01-.176-.011-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.022-.162-.023-.161-.024-.159-.025-.157-.026-.156-.027-.155-.027-.153-.029-.151-.03-.15-.03-.148-.031-.146-.032-.145-.033-.143-.034-.141-.035-.14-.035-.137-.037-.136-.037-.134-.038-.132-.038-.13-.04-.128-.04-.126-.041-.124-.042-.122-.042-.12-.044-.117-.043-.116-.045-.113-.045-.112-.046-.109-.047-.106-.047-.105-.048-.102-.049-.1-.049-.097-.05-.095-.05-.093-.052-.09-.051-.087-.052-.085-.053-.083-.054-.08-.054-.077-.054v4.127zm0-5.654v.011l.001.021.003.021.004.021.005.022.006.022.007.022.009.022.01.022.011.023.012.023.013.023.015.024.016.023.017.024.018.024.019.024.021.024.022.024.023.025.024.024.052.05.056.05.061.05.066.051.07.051.075.052.079.051.084.052.088.052.092.052.097.052.102.052.105.052.11.051.114.051.119.052.123.05.127.051.131.05.135.049.139.049.144.048.147.048.152.047.155.046.16.045.163.045.167.044.171.042.176.042.178.04.183.04.187.038.19.037.194.036.197.034.202.033.204.032.209.03.212.028.216.027.219.025.222.024.226.022.23.02.233.018.236.016.24.014.243.012.246.01.249.008.253.006.256.003.259.001.26-.001.257-.003.254-.006.25-.008.247-.01.244-.012.241-.015.237-.016.233-.018.231-.02.226-.022.224-.024.22-.025.216-.027.212-.029.21-.03.205-.032.202-.033.198-.035.194-.036.191-.037.187-.039.183-.039.179-.041.175-.042.172-.043.168-.044.163-.045.16-.045.155-.047.152-.047.148-.048.143-.048.139-.05.136-.049.131-.05.126-.051.123-.051.118-.051.114-.052.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.051.07-.052.065-.051.06-.05.056-.051.051-.049.023-.025.023-.024.021-.025.02-.024.019-.024.018-.024.017-.024.015-.023.014-.023.013-.024.012-.022.01-.023.01-.023.008-.022.006-.022.006-.022.004-.021.004-.022.001-.021.001-.021v-4.139l-.077.054-.08.054-.083.054-.085.052-.087.053-.09.051-.093.051-.095.051-.097.05-.1.049-.102.049-.105.048-.106.047-.109.047-.111.046-.114.045-.115.044-.118.044-.12.044-.122.042-.124.042-.126.041-.128.04-.13.039-.132.039-.134.038-.135.037-.138.036-.139.036-.142.035-.143.033-.144.033-.147.033-.148.031-.15.03-.151.03-.153.028-.154.028-.156.027-.158.026-.159.025-.161.024-.162.023-.163.022-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.011-.178.009-.179.009-.179.007-.181.007-.182.005-.182.004-.184.003-.184.002h-.37l-.184-.002-.184-.003-.182-.004-.182-.005-.181-.007-.179-.007-.179-.009-.178-.009-.176-.011-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.022-.162-.023-.161-.024-.159-.025-.157-.026-.156-.027-.155-.028-.153-.028-.151-.03-.15-.03-.148-.031-.146-.033-.145-.033-.143-.033-.141-.035-.14-.036-.137-.036-.136-.037-.134-.038-.132-.039-.13-.039-.128-.04-.126-.041-.124-.042-.122-.043-.12-.043-.117-.044-.116-.044-.113-.046-.112-.046-.109-.046-.106-.047-.105-.048-.102-.049-.1-.049-.097-.05-.095-.051-.093-.051-.09-.051-.087-.053-.085-.052-.083-.054-.08-.054-.077-.054v4.139zm0-5.666v.011l.001.02.003.022.004.021.005.022.006.021.007.022.009.023.01.022.011.023.012.023.013.023.015.023.016.024.017.024.018.023.019.024.021.025.022.024.023.024.024.025.052.05.056.05.061.05.066.051.07.051.075.052.079.051.084.052.088.052.092.052.097.052.102.052.105.051.11.052.114.051.119.051.123.051.127.05.131.05.135.05.139.049.144.048.147.048.152.047.155.046.16.045.163.045.167.043.171.043.176.042.178.04.183.04.187.038.19.037.194.036.197.034.202.033.204.032.209.03.212.028.216.027.219.025.222.024.226.021.23.02.233.018.236.017.24.014.243.012.246.01.249.008.253.006.256.003.259.001.26-.001.257-.003.254-.006.25-.008.247-.01.244-.013.241-.014.237-.016.233-.018.231-.02.226-.022.224-.024.22-.025.216-.027.212-.029.21-.03.205-.032.202-.033.198-.035.194-.036.191-.037.187-.039.183-.039.179-.041.175-.042.172-.043.168-.044.163-.045.16-.045.155-.047.152-.047.148-.048.143-.049.139-.049.136-.049.131-.051.126-.05.123-.051.118-.052.114-.051.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.052.07-.051.065-.051.06-.051.056-.05.051-.049.023-.025.023-.025.021-.024.02-.024.019-.024.018-.024.017-.024.015-.023.014-.024.013-.023.012-.023.01-.022.01-.023.008-.022.006-.022.006-.022.004-.022.004-.021.001-.021.001-.021v-4.153l-.077.054-.08.054-.083.053-.085.053-.087.053-.09.051-.093.051-.095.051-.097.05-.1.049-.102.048-.105.048-.106.048-.109.046-.111.046-.114.046-.115.044-.118.044-.12.043-.122.043-.124.042-.126.041-.128.04-.13.039-.132.039-.134.038-.135.037-.138.036-.139.036-.142.034-.143.034-.144.033-.147.032-.148.032-.15.03-.151.03-.153.028-.154.028-.156.027-.158.026-.159.024-.161.024-.162.023-.163.023-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.01-.178.01-.179.009-.179.007-.181.006-.182.006-.182.004-.184.003-.184.001-.185.001-.185-.001-.184-.001-.184-.003-.182-.004-.182-.006-.181-.006-.179-.007-.179-.009-.178-.01-.176-.01-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.023-.162-.023-.161-.024-.159-.024-.157-.026-.156-.027-.155-.028-.153-.028-.151-.03-.15-.03-.148-.032-.146-.032-.145-.033-.143-.034-.141-.034-.14-.036-.137-.036-.136-.037-.134-.038-.132-.039-.13-.039-.128-.041-.126-.041-.124-.041-.122-.043-.12-.043-.117-.044-.116-.044-.113-.046-.112-.046-.109-.046-.106-.048-.105-.048-.102-.048-.1-.05-.097-.049-.095-.051-.093-.051-.09-.052-.087-.052-.085-.053-.083-.053-.08-.054-.077-.054v4.153zm8.74-8.179l-.257.004-.254.005-.25.008-.247.011-.244.012-.241.014-.237.016-.233.018-.231.021-.226.022-.224.023-.22.026-.216.027-.212.028-.21.031-.205.032-.202.033-.198.034-.194.036-.191.038-.187.038-.183.04-.179.041-.175.042-.172.043-.168.043-.163.045-.16.046-.155.046-.152.048-.148.048-.143.048-.139.049-.136.05-.131.05-.126.051-.123.051-.118.051-.114.052-.11.052-.106.052-.101.052-.096.052-.092.052-.088.052-.083.052-.079.052-.074.051-.07.052-.065.051-.06.05-.056.05-.051.05-.023.025-.023.024-.021.024-.02.025-.019.024-.018.024-.017.023-.015.024-.014.023-.013.023-.012.023-.01.023-.01.022-.008.022-.006.023-.006.021-.004.022-.004.021-.001.021-.001.021.001.021.001.021.004.021.004.022.006.021.006.023.008.022.01.022.01.023.012.023.013.023.014.023.015.024.017.023.018.024.019.024.02.025.021.024.023.024.023.025.051.05.056.05.06.05.065.051.07.052.074.051.079.052.083.052.088.052.092.052.096.052.101.052.106.052.11.052.114.052.118.051.123.051.126.051.131.05.136.05.139.049.143.048.148.048.152.048.155.046.16.046.163.045.168.043.172.043.175.042.179.041.183.04.187.038.191.038.194.036.198.034.202.033.205.032.21.031.212.028.216.027.22.026.224.023.226.022.231.021.233.018.237.016.241.014.244.012.247.011.25.008.254.005.257.004.26.001.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241-.014.237-.016.233-.018.231-.021.226-.022.224-.023.22-.026.216-.027.212-.028.21-.031.205-.032.202-.033.198-.034.194-.036.191-.038.187-.038.183-.04.179-.041.175-.042.172-.043.168-.043.163-.045.16-.046.155-.046.152-.048.148-.048.143-.048.139-.049.136-.05.131-.05.126-.051.123-.051.118-.051.114-.052.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.051.07-.052.065-.051.06-.05.056-.05.051-.05.023-.025.023-.024.021-.024.02-.025.019-.024.018-.024.017-.023.015-.024.014-.023.013-.023.012-.023.01-.023.01-.022.008-.022.006-.023.006-.021.004-.022.004-.021.001-.021.001-.021-.001-.021-.001-.021-.004-.021-.004-.022-.006-.021-.006-.023-.008-.022-.01-.022-.01-.023-.012-.023-.013-.023-.014-.023-.015-.024-.017-.023-.018-.024-.019-.024-.02-.025-.021-.024-.023-.024-.023-.025-.051-.05-.056-.05-.06-.05-.065-.051-.07-.052-.074-.051-.079-.052-.083-.052-.088-.052-.092-.052-.096-.052-.101-.052-.106-.052-.11-.052-.114-.052-.118-.051-.123-.051-.126-.051-.131-.05-.136-.05-.139-.049-.143-.048-.148-.048-.152-.048-.155-.046-.16-.046-.163-.045-.168-.043-.172-.043-.175-.042-.179-.041-.183-.04-.187-.038-.191-.038-.194-.036-.198-.034-.202-.033-.205-.032-.21-.031-.212-.028-.216-.027-.22-.026-.224-.023-.226-.022-.231-.021-.233-.018-.237-.016-.241-.014-.244-.012-.247-.011-.25-.008-.254-.005-.257-.004-.26-.001-.26.001z" transform="scale(.5)"></path></symbol></defs><defs><symbol height="24" width="24" id="clock"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z" transform="scale(.5)"></path></symbol></defs><defs><marker orient="auto-start-reverse" markerHeight="12" markerWidth="12" markerUnits="userSpaceOnUse" refY="5" refX="7.9" id="arrowhead"><path d="M -1 0 L 10 5 L 0 10 z"></path></marker></defs><defs><marker refY="4.5" refX="4" orient="auto" markerHeight="8" markerWidth="15" id="crosshead"><path style="stroke-dasharray: 0, 0;" d="M 1,2 L 6,7 M 6,2 L 1,7" stroke-width="1pt" stroke="#000000" fill="none"></path></marker></defs><defs><marker orient="auto" markerHeight="28" markerWidth="20" refY="7" refX="15.5" id="filled-head"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><defs><marker orient="auto" markerHeight="40" markerWidth="60" refY="15" refX="15" id="sequencenumber"><circle r="6" cy="15" cx="15"></circle></marker></defs><g></g><g></g><g></g><g></g><g></g><g name="Client (Browser)" class="actor-man actor-top"><line y2="45" x2="75" y1="25" x1="75" id="actor-man-torso0"></line><line y2="33" x2="93" y1="33" x1="57" id="actor-man-arms0"></line><line y2="45" x2="75" y1="60" x1="57"></line><line y2="60" x2="91" y1="45" x1="75"></line><circle height="65" width="150" r="15" cy="10" cx="75"></circle><text style="text-anchor: middle; font-size: 16px; font-weight: 400;" class="actor actor-man" alignment-baseline="central" dominant-baseline="central" y="67.5" x="75"><tspan dy="0" x="75">Client (Browser)</tspan></text></g><text style="font-size: 16px; font-weight: 400;" dy="1em" class="messageText" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" y="80" x="184">IP of www.google.com?</text><line style="fill: none;" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" class="messageLine0" y2="111" x2="292" y1="111" x1="76"></line><text style="font-size: 16px; font-weight: 400;" dy="1em" class="messageText" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" y="126" x="189">8.8.8.8</text><line style="fill: none;" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" class="messageLine0" y2="155" x2="83" y1="155" x1="295"></line><text style="font-size: 16px; font-weight: 400;" dy="1em" class="messageText" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" y="170" x="286">HTTP-REQ Can I get https://8.8.8.8/home.html?</text><line style="fill: none;" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" class="messageLine0" y2="201" x2="492" y1="201" x1="80"></line><text style="font-size: 16px; font-weight: 400;" dy="1em" class="messageText" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" y="216" x="289">HTTP-RES Sure! `200 OK`</text><line style="fill: none;" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" class="messageLine0" y2="245" x2="83" y1="245" x1="495"></line><text style="font-size: 16px; font-weight: 400;" dy="1em" class="messageText" alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle" y="260" x="292">HTTP-RES Cannot find what you were looking for! `404 NOT FOUND`</text><line style="stroke-dasharray: 3, 3; fill: none;" marker-end="url(#arrowhead)" stroke="none" stroke-width="2" class="messageLine1" y2="291" x2="88" y1="291" x1="495"></line><g name="Client (Browser)" class="actor-man actor-bottom"><line y2="356" x2="75" y1="336" x1="75" id="actor-man-torso2"></line><line y2="344" x2="93" y1="344" x1="57" id="actor-man-arms2"></line><line y2="356" x2="75" y1="371" x1="57"></line><line y2="371" x2="91" y1="356" x1="75"></line><circle height="65" width="150" r="15" cy="321" cx="75"></circle><text style="text-anchor: middle; font-size: 16px; font-weight: 400;" class="actor actor-man" alignment-baseline="central" dominant-baseline="central" y="378.5" x="75"><tspan dy="0" x="75">Client (Browser)</tspan></text></g></svg></div>
 
+</section><section>
+<h3 id="approfondimento-operatori-di-ricerca-e-google-dorking--1"><strong>Approfondimento</strong>: operatori di ricerca e Google Dorking / 1</h3>
+<p>Quando interrogo un motore di ricerca, posso utilizzare determinate <strong>parole chiave</strong> per filtrare i risultati/vincolare il motore di ricerca stesso.</p>
+<p>Qualche esempio:</p>
+<div class="bg-white rounded rounded-lg shadow-sm border border-4 p-2">
+<table>
+  <thead>
+      <tr>
+          <th>Operatore</th>
+          <th>Utilizzo</th>
+          <th>Esempio -&nbsp;da digitare sulla barra di ricerca del browser</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>filetype:pdf</code></td>
+          <td>Filtra solo i file di tipo <code>pdf</code> (<em>posso cercare qualunque estensione</em>).</td>
+          <td><code>HTML Cheatsheet filetype:pdf</code></td>
+      </tr>
+      <tr>
+          <td><code>site:repubblica.it</code></td>
+          <td>Filtra solo i risultati provenienti dal sito <code>repubblica.it</code> (<em>posso sostituire con qualunque URL</em>).</td>
+          <td><code>Tecnologia site:repubblica.it</code></td>
+      </tr>
+      <tr>
+          <td><code>inurl:admin</code></td>
+          <td>Filtra solo le pagine in cui la parola “<em>admin</em>” è presente nell’URL. (<em>posso sostituire con qualunque parola</em>).</td>
+          <td><code>portaleargo.it inurl:areautenti</code></td>
+      </tr>
+  </tbody>
+</table>
+</div>
+</section><section>
+<h3 id="approfondimento-operatori-di-ricerca-e-google-dorking--2"><strong>Approfondimento</strong>: operatori di ricerca e Google Dorking / 2</h3>
+<p>Tanti altri operatori!</p>
+<p>Combinazioni “notevoli” di più operatori raccolte nel <strong>GHDB</strong> (<em>Google Hacking Database</em>).</p>
+<img src="imgs/ghdb.png" class="w-50">
+<blockquote>
+<p>Visita il sito: <a href="https://www.exploit-db.com/google-hacking-database">https://www.exploit-db.com/google-hacking-database</a></p>
+</blockquote>
 
 </section>
 </section><section>
-<h2 id="web-standards">Web standards</h2>
+
+
+<section data-shortcode-section="">
+<h4 id="parte-02">Parte <strong>#02</strong>.</h4>
+<h1 id="web-standards"><strong>Web Standards</strong></h1>
+<h2 id="introduzione-agli-strumenti-del-web-il-dom">Introduzione agli strumenti del web, il DOM.</h2>
+</section><section>
+<h2 id="web-standards-1">Web standards</h2>
 <ul>
 <li>Tecnologie utilizzate per costruire <strong>siti web</strong>.</li>
 </ul>
@@ -76,20 +171,45 @@
 <li>Retrocompatibilità</li>
 </ol>
 </section><section>
-<h2 id="dispense-di-un-vecchio-seminario">Dispense di un “vecchio” seminario</h2>
-<p>“<strong><a href="https://github.com/Nickolausen/react-for-dummies/tree/master/web-basics">React for Dummies / Web Basics</a></strong>”, corso pomeridiano PNRR <strong>@</strong> I.T.T. “Blaise Pascal”</p>
+<img src="imgs/metaphor.png" class="w-50">
+<p><small><strong>Disclaimer</strong>: Immagine generata da Intelligenza Artificiale - Google Gemini.</small></p>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><h2 id="html">HTML</h2>
+<p><strong>Struttura</strong> di un documento.</p>
+<ul>
+<li>“<strong>Com’è fatta</strong> una pagina.”</li>
+</ul>
+</div>
+<div class="col "><h2 id="css">CSS</h2>
+<p><strong>Presentazione</strong> di un documento.</p>
+<ul>
+<li>“<strong>Come si presenta</strong> una pagina.”</li>
+</ul>
+</div>
+<div class="col "><h2 id="javascript">JavaScript</h2>
+<p><strong>Interattività</strong> di un documento.</p>
+<ul>
+<li>“<strong>Quali funzionalità</strong> ha una pagina.”</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section>
+<h2 id="come-funziona-un-browser--2">Come funziona un <strong>browser</strong>? / 2</h2>
+
+</section>
 </section><section>
 
 
 <section data-shortcode-section="">
+<h4 id="parte-03">Parte <strong>#03</strong>.</h4>
+<h1 id="html"><strong>HTML</strong></h1>
+<h2 id="tag-e-loro-semantica-attributi-esempi-vari">Tag e loro semantica, attributi, esempi vari.</h2>
+</section><section>
 <img style="max-width: 128px" class="exclude" src="https://cdn-icons-png.flaticon.com/512/174/174854.png">
 <br>
-<small>
-<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
-</small>
-<h2 id="html"><strong>HTML</strong></h2>
+<h2 id="html-1"><strong>HTML</strong></h2>
 <h3 id="hypertext-markup-language"><strong>H</strong>yperText <strong>M</strong>arkup <strong>L</strong>anguage</h3>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Guida di riferimento: MDN Docs</a></p>
 </section><section>
 <h3 id="linguaggio-di-markup">Linguaggio di markup</h3>
 <ul>
@@ -106,7 +226,8 @@
 <p><img src="imgs/HTML.png" alt=""></p>
 </section><section>
 <h2 id="html-tag">HTML: <strong>Tag</strong></h2>
-<ul>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><ul>
 <li>Una pagina si compone di un insieme di <strong>tag</strong>:
 <ul>
 <li>ogni tag è composto da un <strong>nome</strong> (<em>case insensitive</em>) circondato da <code>&lt;</code> e <code>&gt;</code>;</li>
@@ -114,6 +235,11 @@
 </ul>
 </li>
 </ul>
+</div>
+<div class="col "><p><img src="imgs/tags.png" alt="alt text"></p>
+</div>
+</div>
+</div>
 </section><section>
 <div class="container-fluid m-0 p-0">
     <div class="row "><div class="col "><h3 id="codice-sorgente">Codice sorgente</h3>
@@ -122,33 +248,43 @@
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>
 </span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>&lt;<span style="color:#ff6ac1">html</span>&gt;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  <span style="color:#78787e">&lt;!-- Parte di metadati della pagina --&gt;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>    &lt;<span style="color:#ff6ac1">head</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>      &lt;<span style="color:#ff6ac1">title</span>&gt;Il mio bellissimo sito&lt;/<span style="color:#ff6ac1">title</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    &lt;/<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  &lt;<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    &lt;<span style="color:#ff6ac1">title</span>&gt;Il mio bellissimo sito&lt;/<span style="color:#ff6ac1">title</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>  &lt;/<span style="color:#ff6ac1">head</span>&gt;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    <span style="color:#78787e">&lt;!-- Contenuto della pagina --&gt;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    &lt;<span style="color:#ff6ac1">body</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>      &lt;<span style="color:#ff6ac1">p</span>&gt;Lorem Ipsum Ipse Dixit&lt;/<span style="color:#ff6ac1">p</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>        &lt;<span style="color:#ff6ac1">a</span> <span style="color:#57c7ff">href</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"www.google.com"</span>&gt;Mi sento fortunato&lt;/<span style="color:#ff6ac1">a</span>&gt;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>    &lt;/<span style="color:#ff6ac1">body</span>&gt;
-</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>&lt;/<span style="color:#ff6ac1">html</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>  <span style="color:#78787e">&lt;!-- Contenuto della pagina --&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  &lt;<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    &lt;<span style="color:#ff6ac1">h1</span> <span style="color:#57c7ff">style</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"text-align: center"</span>&gt;My ToDo List&lt;/<span style="color:#ff6ac1">h1</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>    &lt;<span style="color:#ff6ac1">ul</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>      &lt;<span style="color:#ff6ac1">li</span>&gt;Fai i compiti&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>      &lt;<span style="color:#ff6ac1">li</span>&gt;Gioca a Call Of Duty&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>      &lt;<span style="color:#ff6ac1">li</span>&gt;Vai in palestra&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>    &lt;/<span style="color:#ff6ac1">ul</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>    &lt;<span style="color:#ff6ac1">a</span> <span style="color:#57c7ff">href</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"www.google.com"</span>&gt;Cerca su Google&lt;/<span style="color:#ff6ac1">a</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>  &lt;/<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>&lt;/<span style="color:#ff6ac1">html</span>&gt;
 </span></span></code></pre></div><div class="callout note">
     <div class="callout-background py-4 px-5"><div class="callout-content"><p>In evidenza il tag <code>&lt;html&gt;</code>, <strong>radice</strong> della pagina.</p>
 </div></div>
 </div>
 </div>
 <div class="col "><h3 id="render">Render</h3>
-<iframe height="500" sandbox="" srcdoc="<!DOCTYPE html> 
+<iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" sandbox="" src="about:blank" srcdoc="<!DOCTYPE html> 
 <!-- Dichiaro il tipo di documento -->
 <html>
-  <!-- Parte di metadati della pagina -->
+    <!-- Parte di metadati della pagina -->
     <head>
       <title>Il mio bellissimo sito</title>
     </head>
 <pre><code><!-- Contenuto della pagina -->
 <body>
-  <p>Lorem Ipsum Ipse Dixit</p>
-    <a href=&quot;www.google.com&quot;>Mi sento fortunato</a>
+  <h1 style=&quot;text-align: center&quot;>My ToDo List</h1>
+  <ul>
+    <li>Fai i compiti</li>
+    <li>Gioca a Call Of Duty</li>
+    <li>Vai in palestra</li>
+  </ul>
+  <a href=&quot;www.google.com&quot;>Cerca su Google</a>
 </body>
 </code></pre>
 </html>">
@@ -160,6 +296,268 @@
 <h2 id="semantica-dei-tag">Semantica dei tag</h2>
 <p><img src="imgs/semantica.png" alt="Semantica"></p>
 <p>Ogni tag deve essere usato in accordo con il <strong>contenuto che deve rappresentare</strong>.</p>
+</section><section>
+<h2 id="suddivisione-in-categorie">Suddivisione in categorie</h2>
+<br>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><p>Di tag ce ne sono tanti, e possiamo dividerli in categorie in base al <strong>tipo di contenuto</strong> che rappresentano (un paragrafo? un audio? una lista?).</p>
+<br>
+<div class="callout tip">
+    <div class="callout-background py-4 px-5"><div class="callout-content"><p><em>Non ci interessa impararli tutti a memoria!</em> Dobbiamo diventare abili nel <strong>consultare la documentazione</strong>.</p>
+</div></div>
+</div>
+<br>
+<p>Guide di riferimento:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla Developer Network - MDN Docs</a></li>
+<li><a href="https://w3schools.com/html">W3Schools</a></li>
+</ul>
+</div>
+<div class="col "><ol>
+<li><strong>Basic HTML</strong></li>
+<li>Formatting</li>
+<li>Forms and Input</li>
+<li>Iframe</li>
+<li><strong>Images</strong></li>
+<li>Audio/Video</li>
+<li><strong>Links</strong></li>
+<li><strong>Lists</strong></li>
+<li>Tables</li>
+<li>Styles and semantics</li>
+<li>Meta Info</li>
+<li>Programming</li>
+</ol>
+<br>
+<br>
+<p><small>Da W3Schools: <a href="https://www.w3schools.com/tags/ref_byfunc.asp">https://www.w3schools.com/tags/ref_byfunc.asp</a> </small></p>
+</div>
+</div>
+</div>
+</section><section>
+<h3 id="p---basic-html--1"><code>&lt;p&gt;</code> - Basic HTML / 1</h3>
+<p>Con il tag <code>&lt;p&gt;</code> rappresentiamo un <strong>paragrafo</strong> (<em>p — paragraph</em>, in inglese)</p>
+<ul>
+<li>blocchi di un testo</li>
+<li>elementi semanticamente correlati</li>
+</ul>
+<br>
+<br>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col col-6"><div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#78787e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>&lt;<span style="color:#ff6ac1">html</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  &lt;<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    &lt;<span style="color:#ff6ac1">title</span>&gt;HTML Test - paragraphs&lt;/<span style="color:#ff6ac1">title</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  &lt;/<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  &lt;<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    &lt;<span style="color:#ff6ac1">p</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>      Geckos are a group of usually small, usually nocturnal lizards. They are found
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>      on every continent except Antarctica.
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    &lt;/<span style="color:#ff6ac1">p</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    &lt;<span style="color:#ff6ac1">p</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>      Some species live in houses where they hunt insects attracted by artificial
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>      light.
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>    &lt;/<span style="color:#ff6ac1">p</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>  &lt;/<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>&lt;/<span style="color:#ff6ac1">html</span>&gt;
+</span></span></code></pre></div></div>
+<div class="col col-6"><iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" sandbox="" src="about:blank" srcdoc="<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - paragraphs</title>
+  </head>
+  <body>
+    <p>
+      Geckos are a group of usually small, usually nocturnal lizards. They are found
+      on every continent except Antarctica.
+    </p>
+    <p>
+      Some species live in houses where they hunt insects attracted by artificial
+      light.
+    </p>
+  </body>
+</html>">
+</iframe>
+</div>
+</div>
+</div>
+</section><section>
+<h3 id="h1h1---h6h6---basic-html--2"><code>&lt;h1&gt;&lt;/h1&gt;</code> - <code>&lt;h6&gt;&lt;/h6&gt;</code> - Basic HTML / 2</h3>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><p>Con i tag <code>&lt;h1&gt;</code> — <code>&lt;h6&gt;</code> rappresentiamo sei livelli di <strong>intestazione</strong> (<em>h — heading</em>, in inglese).</p>
+<ul>
+<li>il livello più alto (importante) è <code>&lt;h1&gt;</code></li>
+<li>il livello più basso (meno importante) è <code>&lt;h6&gt;</code></li>
+</ul>
+</div>
+<div class="col "><div class="callout note">
+    <div class="callout-background py-4 px-5"><div class="callout-title text-start">Accessibilità</div><div class="callout-content"><p>È buona norma prevedere <strong>un solo</strong> <code>h1</code> per pagina, e utilizzare correttamente i livelli di annidamento dei tag (<em>non saltare/mescolare i livelli!</em>).</p>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#78787e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>&lt;<span style="color:#ff6ac1">html</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  &lt;<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    &lt;<span style="color:#ff6ac1">title</span>&gt;HTML Test - paragraphs&lt;/<span style="color:#ff6ac1">title</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  &lt;/<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  &lt;<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    &lt;<span style="color:#ff6ac1">h1</span>&gt;Beetles&lt;/<span style="color:#ff6ac1">h1</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    &lt;<span style="color:#ff6ac1">h2</span>&gt;External morphology&lt;/<span style="color:#ff6ac1">h2</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>    &lt;<span style="color:#ff6ac1">h3</span>&gt;Head&lt;/<span style="color:#ff6ac1">h3</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    &lt;<span style="color:#ff6ac1">h4</span>&gt;Mouthparts&lt;/<span style="color:#ff6ac1">h4</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    &lt;<span style="color:#ff6ac1">h3</span>&gt;Thorax&lt;/<span style="color:#ff6ac1">h3</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>    &lt;<span style="color:#ff6ac1">h4</span>&gt;Prothorax&lt;/<span style="color:#ff6ac1">h4</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>    &lt;<span style="color:#ff6ac1">h4</span>&gt;Pterothorax&lt;/<span style="color:#ff6ac1">h4</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>  &lt;/<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>&lt;/<span style="color:#ff6ac1">html</span>&gt;
+</span></span></code></pre></div></div>
+<div class="col "><iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" sandbox="" src="about:blank" srcdoc="<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - paragraphs</title>
+  </head>
+  <body>
+    <h1>Beetles</h1>
+    <h2>External morphology</h2>
+    <h3>Head</h3>
+    <h4>Mouthparts</h4>
+    <h3>Thorax</h3>
+    <h4>Prothorax</h4>
+    <h4>Pterothorax</h4>
+  </body>
+</html>">
+</iframe>
+</div>
+</div>
+</div>
+</section><section>
+<h3 id="aa---links--3"><code>&lt;a&gt;&lt;/a&gt;</code> - Links / 3</h3>
+<p>Con il tag <code>&lt;a&gt;</code> definiamo un <strong>collegamento</strong> (<em>a — anchor</em>, in inglese) <br> ad un sito web/documento/risorsa presente nel web.</p>
+<ul>
+<li>con l’<strong>attributo</strong> <code>href</code> specifichiamo il <em>percorso</em> del collegamento (<strong>DOVE</strong> si trova la risorsa);</li>
+<li>come contenuto del tag possiamo specificare il testo (l’etichetta) con cui viene mostrato il link.</li>
+</ul>
+<br>
+<br>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#78787e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>&lt;<span style="color:#ff6ac1">html</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  &lt;<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    &lt;<span style="color:#ff6ac1">title</span>&gt;HTML Test - links&lt;/<span style="color:#ff6ac1">title</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  &lt;/<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  &lt;<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    &lt;<span style="color:#ff6ac1">a</span> <span style="color:#57c7ff">href</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"www.google.com"</span>&gt;Vai su Google.&lt;/<span style="color:#ff6ac1">a</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>    &lt;<span style="color:#ff6ac1">a</span> <span style="color:#57c7ff">href</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"www.google.com"</span> <span style="color:#57c7ff">target</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"_blank"</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>      Vai su Google - in un'altra scheda.
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    &lt;/<span style="color:#ff6ac1">a</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>  &lt;/<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>&lt;/<span style="color:#ff6ac1">html</span>&gt;
+</span></span></code></pre></div></div>
+<div class="col "><iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" sandbox="" src="about:blank" srcdoc="<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - links</title>
+  </head>
+  <body>
+    <a href=&quot;https://www.google.com/&quot;>Vai su Google.</a>
+    <br>
+    <a href=&quot;www.google.com&quot; target=&quot;_blank&quot;>
+      Vai su Google - in altra scheda.
+    </a>
+  </body>
+</html>">
+</iframe>
+</div>
+</div>
+</div>
+</section><section>
+<h3 id="img---images--4"><code>&lt;img/&gt;</code> - Images / 4</h3>
+<p>Con il tag <code>&lt;img/&gt;</code> (attenzione, è un “<em>self-closing tag!</em>”) possiamo includere un’<strong>immagine</strong> (<em>img — image</em>, in inglese) <br> nella nostra pagina HTML.</p>
+<p>Ci sono <strong>due attributi obbligatori</strong> per poter utilizzare correttamente il tag:</p>
+<ul>
+<li>con l’attributo <code>src</code> specifichiamo il <em>percorso</em> all’immagine
+<ul>
+<li>può essere locale nel nostro computer;</li>
+<li>può essere un’immagine presente nel web;</li>
+</ul>
+</li>
+<li>con l’attributo <code>alt</code> specifichiamo un testo alternativo che viene visualizzato quando un’immagine, per qualche ragione, non viene correttamente caricata.</li>
+</ul>
+<br>
+<div class="container-fluid m-0 p-0">
+    <div class="row "><div class="col "><div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#78787e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>&lt;<span style="color:#ff6ac1">html</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>  &lt;<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>    &lt;<span style="color:#ff6ac1">title</span>&gt;HTML Test - links&lt;/<span style="color:#ff6ac1">title</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>  &lt;/<span style="color:#ff6ac1">head</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>  &lt;<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>    &lt;<span style="color:#ff6ac1">img</span> 
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>      <span style="color:#57c7ff">src</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg"</span> 
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>      <span style="color:#57c7ff">alt</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"Profilo di Tim Berners Lee"</span>
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>    /&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>    &lt;<span style="color:#ff6ac1">img</span> 
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>      <span style="color:#57c7ff">src</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"imgs/web-arch.png"</span> 
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>      <span style="color:#57c7ff">alt</span><span style="color:#ff6ac1">=</span><span style="color:#5af78e">"Architettura Web"</span>
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>    /&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>  &lt;/<span style="color:#ff6ac1">body</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>&lt;/<span style="color:#ff6ac1">html</span>&gt;
+</span></span></code></pre></div></div>
+<div class="col "><iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" sandbox="" src="about:blank" srcdoc="<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - links</title>
+    <style>
+      img {
+        max-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img 
+      src=&quot;https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg&quot; 
+      alt=&quot;Profilo di Tim Berners Lee&quot;/>
+    <br>
+    <img 
+      src=&quot;imgs/web-arch.png&quot; 
+      alt=&quot;Architettura Web&quot;
+    />
+  </body>
+</html>">
+</iframe>
+</div>
+</div>
+</div>
+</section><section>
+<h3 id="ulul-olol-lili---lists--5"><code>&lt;ul&gt;&lt;/ul&gt;</code>, <code>&lt;ol&gt;&lt;/ol&gt;</code>, <code>&lt;li&gt;&lt;/li&gt;</code> - Lists / 5</h3>
+<p>Con <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> (esisterebbe anche <code>&lt;dl&gt;</code>, qui non approfondito) rappresentiamo delle liste di elementi <strong>semanticamente</strong> correlati.</p>
+<br>
+<div class="container-fluid m-0 p-0">
+    <div class="row d-flex gap-2"><div class="col border border-warning border-5 rounded flex-grow"><h4 id="li---list-item"><code>&lt;li&gt;</code> - List Item</h4>
+<p>Singolo elemento di una lista. Va sempre usato come figlio diretto di un tag <code>&lt;ul&gt;</code>/<code>&lt;ol&gt;</code>.</p>
+</div>
+<div class="col border border-warning border-5 rounded flex-grow"><h4 id="ul---unordered-list"><code>&lt;ul&gt;</code> - Unordered List</h4>
+<p>Rappresenta una lista dove l’ordine degli elemento <strong>non conta</strong>. Uno stile predefinito mostra gli elementi affiancati da un “•”.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#ff6ac1">h2</span>&gt;ToDo List&lt;/<span style="color:#ff6ac1">h2</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>&lt;<span style="color:#ff6ac1">ul</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  &lt;<span style="color:#ff6ac1">li</span>&gt;Homework&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  &lt;<span style="color:#ff6ac1">li</span>&gt;Shopping&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  &lt;<span style="color:#ff6ac1">li</span>&gt;Work&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>&lt;/<span style="color:#ff6ac1">ul</span>&gt;
+</span></span></code></pre></div></div>
+<div class="col border border-warning border-5 rounded flex-grow"><h4 id="ol---ordered-list"><code>&lt;ol&gt;</code> - Ordered List</h4>
+<p>Rappresenta una lista dove l’ordine degli elemento <strong>conta</strong>. Uno stile predefinito mostra gli elementi affiancati da un numero progressivo relativo alla loro posizione in lista.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;display:grid;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>&lt;<span style="color:#ff6ac1">h2</span>&gt;ToDo List&lt;/<span style="color:#ff6ac1">h2</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>&lt;<span style="color:#ff6ac1">ol</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  &lt;<span style="color:#ff6ac1">li</span>&gt;Homework&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  &lt;<span style="color:#ff6ac1">li</span>&gt;Shopping&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  &lt;<span style="color:#ff6ac1">li</span>&gt;Work&lt;/<span style="color:#ff6ac1">li</span>&gt;
+</span></span><span style="display:flex; background-color:#3d3f4a"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>&lt;/<span style="color:#ff6ac1">ol</span>&gt;
+</span></span></code></pre></div></div>
+</div>
+</div>
 </section><section>
 <h2 id="tag-di-sectioning">Tag di sectioning</h2>
 <div class="container-fluid m-0 p-0">
@@ -206,25 +604,6 @@
 </div>
 </div>
 </section><section>
-<h4 id="alcuni-tag-fondamentali">Alcuni tag fondamentali</h4>
-<h3 id="img"><code>&lt;img/&gt;</code></h3>
-<ul>
-<li><code>&lt;img src="link-to-img" alt="what-img-represents"&gt;</code>
-<ul>
-<li><code>src</code>: percorso dell’immagine (salvata nel filesystem o sul web)</li>
-<li><code>alt</code>: testo alternativo (mostrato quando l’immagine non viene caricata correttamente)</li>
-</ul>
-</li>
-</ul>
-</section><section>
-<h4 id="alcuni-tag-fondamentali-1">Alcuni tag fondamentali</h4>
-<h3 id="aa"><code>&lt;a&gt;&lt;/a&gt;</code></h3>
-<p><code>&lt;a href="www.google.com" target="_blank"&gt;Clicca qui&lt;/a&gt;</code></p>
-<ul>
-<li><code>href</code>: URL del tag.</li>
-<li><code>target</code>: specifica dove deve essere aperto quel link — <code>_blank</code> indica “in una nuova tab”.</li>
-</ul>
-</section><section>
 <h2 id="attributi">Attributi</h2>
 <ul>
 <li>Ce ne sono tanti, alcuni visti poco fa (<code>href</code>, <code>target</code>, <code>src</code>, <code>alt</code>…)</li>
@@ -246,18 +625,18 @@
 <li><strong><code>id</code></strong>: identifica un <strong>singolo elemento</strong> della mia pagina.</li>
 </ul>
 <p>Entrambi permettono di interagire con il documento HTML tramite <strong>fogli di stile</strong> o <strong>script esterni</strong>.</p>
-</section><section>
-<h2 id="attività-01">Attività <strong>#01</strong></h2>
-<img class="w-75" src="imgs/gravatar.png">
-<p><a href="https://it.gravatar.com/">https://it.gravatar.com/</a></p>
 
 </section>
 </section><section>
 
 
 <section data-shortcode-section="">
+<h4 id="parte-04">Parte <strong>#04</strong>.</h4>
+<h1 id="css"><strong>CSS</strong></h1>
+<h2 id="importazione-regole-di-stile-selettori-specificità-esempi-vari">Importazione, regole di stile, selettori, specificità, esempi vari.</h2>
+</section><section>
 <img class="exclude" style="max-width: 128px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/960px-Official_CSS_Logo.svg.png">
-<h2 id="css"><strong>CSS</strong></h2>
+<h2 id="css-1"><strong>CSS</strong></h2>
 <h3 id="cascading-style-sheet"><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heet</h3>
 </section><section>
 <h3 id="cascading-style-sheet-1">Cascading Style Sheet</h3>
@@ -434,7 +813,7 @@
     </tr>
     <tr>
       <td><code>proprietà</code></td>
-      <td>caratteristica di stile assegnabile ad un elemento</td>
+      <td>uno stile di un elemento</td>
       <td><code>margin</code>, <code>padding</code>...</td>
     </tr>
   </tbody>
@@ -832,11 +1211,15 @@ Bootstrap is used by 14.4% of all the websites, that is a CSS framework market s
 
 
 <section data-shortcode-section="">
+<h4 id="parte-05">Parte <strong>#05</strong>.</h4>
+<h1 id="javascript"><strong>JavaScript</strong></h1>
+<h2 id="sintassi-base-tipi-di-dato-dom-manipulation-strutture-dati">Sintassi base, tipi di dato, DOM Manipulation, strutture dati.</h2>
+</section><section>
 <img class="exclude" style="max-width: 128px;" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail&amp;_=20120221235433">
 <h2 id="js"><strong>JS</strong></h2>
-<h3 id="javascript"><strong>J</strong>ava<strong>S</strong>cript</h3>
-</section><section>
 <h3 id="javascript-1"><strong>J</strong>ava<strong>S</strong>cript</h3>
+</section><section>
+<h3 id="javascript-2"><strong>J</strong>ava<strong>S</strong>cript</h3>
 <ul>
 <li>Linguaggio interpretato*, debolmente tipizzato e <strong>prototype-based</strong>
 <ul>
@@ -1122,479 +1505,6 @@ Bootstrap is used by 14.4% of all the websites, that is a CSS framework market s
 </span></span></span></code></pre></div></div>
 </div>
 </div>
-</section><section>
-<h3 id="breve---e-doveroso---cenno-storico--1">Breve - e doveroso - cenno “<strong>storico</strong>” / 1</h3>
-<p>È molto facile fare <strong>confusione</strong> tra diversi standard / concetti base / versioni di JavaScript:</p>
-<br>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><h4 id="ecmascript-es">ECMAScript (ES)</h4>
-<p><strong>Standard JavaScript</strong> (modello teorico)</p>
-<ul>
-<li>grammatica e regolamento formale del linguaggio</li>
-<li>redatto da comitato tecnico TC39 dell’organizzazione ECMA International</li>
-</ul>
-</div>
-<div class="col "><h4 id="javascript-js"><strong>JavaScript (JS)</strong></h4>
-<p><strong>Implementazione</strong> della specifica teorica nei vari <strong>browser</strong>.</p>
-</div>
-</div>
-</div>
-</section><section>
-<h3 id="breve---e-doveroso---cenno-storico--2">Breve - e doveroso - cenno “<strong>storico</strong>” / 2</h3>
-<p>Quando nel 2009 è nato <strong>Node.js</strong> per eseguire JS fuori dal browser, gli sviluppatori avevano bisogno urgente di un sistema a <strong>moduli</strong> per <strong>gestire progetti complessi</strong>.</p>
-<br>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><h4 id="commonjs-cjs"><strong>CommonJS</strong> (CJS)</h4>
-<p>Prima gestione dei <strong>moduli</strong> (librerie esterne) teorizzata dalla <em>community</em> e adottata da NodeJS.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#78787e">// Sintassi CommonJS (CJS)
-</span></span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// IMPORTAZIONE MODULI (inizio file)
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">const</span> express <span style="color:#ff6ac1">=</span> require(<span style="color:#5af78e">'express'</span>);
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// ESPORTAZIONE MODULI (fine file)
-</span></span></span><span style="display:flex;"><span>module.exports <span style="color:#ff6ac1">=</span> { miaFunzione };
-</span></span></code></pre></div></div>
-<div class="col "><div class="callout tip">
-    <div class="callout-background py-4 px-5"><div class="callout-content"><h4 id="ecmascript--esmodules-esm">ECMAScript <br> <strong>ESModules</strong> (ESM)</h4>
-<p>Nel 2015, con ES6, il comitato ECMAScript ha finalmente introdotto un sistema di moduli ufficiale e nativo.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#78787e">// Sintassi ES Modules (ESM)
-</span></span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// IMPORTAZIONE MODULI (inizio file)
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">import</span> express from <span style="color:#5af78e">'express'</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// ESPORTAZIONE MODULI (fine file)
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">export</span> { miaFunzione };
-</span></span></code></pre></div></div></div>
-</div>
-</div>
-</div>
-</div>
-</section><section>
-<h3 id="breve---e-doveroso---cenno-storico--3">Breve - e doveroso - cenno “<strong>storico</strong>” / 3</h3>
-<h4 id="versionamento">Versionamento</h4>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><h5 id="prima-del-2015-es1-es6"><strong>Prima</strong> del 2015 (<em>ES1-ES6</em>)</h5>
-<ul>
-<li>Una release ogni tot anni, accumulando feature per ogni rilascio</li>
-<li>Nomenclatura con progressivo
-<ul>
-<li>ES1</li>
-<li>ES2</li>
-<li>ES3</li>
-<li><em>ES4 - non presente</em></li>
-<li>ES5</li>
-<li><strong>ES6</strong> - la più importante
-<ul>
-<li>arrow functions</li>
-<li><code>let</code>/<code>const</code></li>
-<li>classi</li>
-<li>moduli nativi</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col "><h5 id="dopo-il-2015-es2015"><strong>Dopo</strong> il 2015 (<em>ES2015+</em>)</h5>
-<ul>
-<li><strong>Ciclo annuale</strong> e <strong>continuo</strong> di rilascio</li>
-<li>Da qui, il nome contiene l’anno solare di approvazione della versione
-<ul>
-<li>ES2015</li>
-<li>ES2016</li>
-<li>ES2017 (con <code>async</code>/<code>await</code>!)</li>
-<li>ES2018, 19, 20…</li>
-</ul>
-</li>
-<li>nuova release ogni giugno di ogni anno!</li>
-</ul>
-</div>
-</div>
-</div>
-
-</section>
-</section><section>
-
-
-<section data-shortcode-section="">
-<img class="exclude" style="max-width: 128px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F4c%2FTypescript_logo_2020.svg%2F1280px-Typescript_logo_2020.svg.png%3F_%3D20221110153201&amp;f=1&amp;nofb=1&amp;ipt=08cec9d878c8b1f1d83073ea26221d4513bd6b711bcedccac791aefc9c9ad50a&amp;ipo=images">
-<h2 id="ts"><strong>TS</strong></h2>
-<h3 id="typescript"><strong>T</strong>ype<strong>S</strong>cript</h3>
-</section><section>
-<h3 id="i-problemi-di-javascript">I <strong>problemi</strong> di <strong>JavaScript</strong></h3>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><ul>
-<li>Tipizzazione <strong>debole</strong> e <strong>dinamica</strong>
-<ul>
-<li>molti errori vengono scoperti solo a <em>run-time</em> (programma in esecuzione)</li>
-</ul>
-</li>
-<li>Comportamenti <strong>imprevedibili</strong>
-<ul>
-<li><code>[] + {}</code> $\rightarrow\ ?$</li>
-<li><code>"5" - 1</code> $\rightarrow\ ?$</li>
-</ul>
-</li>
-<li>Difficoltà di <strong>refactoring</strong>
-<ul>
-<li>progetti medio/grandi difficilmente manutenibili e scalabili</li>
-</ul>
-</li>
-<li>Mancanza di autocompletamento
-<ul>
-<li>assenza di <strong>IntelliSense</strong></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col "><p><img src="imgs/js-hell.png" alt=""></p>
-</div>
-</div>
-</div>
-</section><section>
-<h3 id="perché-typescript--1"><strong>Perché</strong> <strong>T</strong>ype<strong>S</strong>cript / 1</h3>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><ul>
-<li><strong>Superset tipizzato di JavaScript</strong>, open-source e sviluppato da Microsoft
-<ul>
-<li>stesso progettista di C#!</li>
-</ul>
-</li>
-<li><strong>“Superset”</strong>
-<ul>
-<li>il codice JavaScript rimane <em>valido</em> in TypeScript</li>
-</ul>
-</li>
-<li><strong>Compatibilità</strong> con i browser/JS runtime (Node, Bun, Deno…)
-<ul>
-<li>il codice TypeScript deve essere convertito in codice JavaScript</li>
-<li>particolare compilatore chiamato “<strong>transpiler</strong>”
-<ul>
-<li>sottile differenza dal concetto tradizionale di compilatore</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Zero overhead</strong>
-<ul>
-<li>la tipizzazione è presente solo a <strong>compile-time</strong></li>
-<li>una volta “traspilato”, <strong>i tipi spariscono completamente</strong></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col d-flex justify-content-center"><img src="imgs/superset.png">
-</div>
-</div>
-</div>
-</section><section>
-<h3 id="perché-typescript--2"><strong>Perché</strong> <strong>T</strong>ype<strong>S</strong>cript / 2</h3>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><h4 id="rilevamento-errori--a-compile-time">Rilevamento errori <br> a <strong>compile-time</strong></h4>
-<p>Gli errori vengono segnalati ancor prima di avviare il programma.</p>
-</div>
-<div class="col "><h4 id="developer-experience">Developer experience</h4>
-<p>IntelliSense, documentazione inline delle funzioni, navigazione rapida del codice.</p>
-</div>
-<div class="col "><h4 id="refactoring-e-manutenibilità">Refactoring e manutenibilità</h4>
-<p>I tipi fungono da documentazione aggiornata, bassa probabilità di rompere codice con manovre di refactoring.</p>
-</div>
-</div>
-</div>
-</section><section>
-<h3 id="i-tipi-base">I tipi base</h3>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><ul>
-<li>Tipi primitivi:
-<ul>
-<li><code>string</code>,</li>
-<li><code>number</code>,</li>
-<li><code>boolean</code>,</li>
-<li><code>null</code>,</li>
-<li><code>undefined</code></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col "><ul>
-<li>Array e tuple: <code>T[]</code>, <code>[T, U]</code>
-<ul>
-<li>per esempio:
-<ul>
-<li><code>number[]</code>,</li>
-<li><code>[number, string]</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="col "><h4 id="type-inference">Type inference</h4>
-<p>TS capisce il tipo di dato e lo inferisce ad una variabile, senza bisogno di annotarlo</p>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff5c57">let</span> messaggio: <span style="color:#9aedfe">string</span> <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">"Ciao Mondo"</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// TS deduce automaticamente 'number'
-</span></span></span><span style="display:flex;"><span><span style="color:#ff5c57">let</span> count <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">42</span>; 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// TS capisce che si tratta di 'number[]'
-</span></span></span><span style="display:flex;"><span><span style="color:#ff5c57">let</span> numbers <span style="color:#ff6ac1">=</span> [<span style="color:#ff9f43">1</span>, <span style="color:#ff9f43">2</span>, <span style="color:#ff9f43">3</span>, <span style="color:#ff9f43">4</span>, <span style="color:#ff9f43">5</span>] 
-</span></span></code></pre></div></div>
-</div>
-</div>
-</section><section>
-<h3 id="type-vs-interface"><strong>Type</strong> vs <strong>Interface</strong></h3>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><h4 id="interface"><strong>Interface</strong></h4>
-<ul>
-<li>Costrutto ideale per modellare oggetti,</li>
-<li>Estendibile con <code>extends</code></li>
-<li>Adatta per architetture ad oggetti e API pubbliche</li>
-</ul>
-</div>
-<div class="col "><h4 id="type"><strong>Type</strong></h4>
-<ul>
-<li>Costrutto versatile</li>
-<li>Supporto alle operazioni <strong>insiemistiche tra tipi</strong></li>
-</ul>
-</div>
-</div>
-</div>
-</section><section>
-<h3 id="qualche-esempio-di-type--1">Qualche esempio di <code>type</code> / 1</h3>
-<h4 id="union--e-intersection-">Union (<code>|</code>) e Intersection (<code>&amp;</code>)</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#78787e">// Union (OR): one of those possible values
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> RequestStatus <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">"idle"</span> <span style="color:#ff6ac1">|</span> <span style="color:#5af78e">"loading"</span> <span style="color:#ff6ac1">|</span> <span style="color:#5af78e">"success"</span> <span style="color:#ff6ac1">|</span> <span style="color:#5af78e">"error"</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// ---
-</span></span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> Timestamped <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  createdAt: <span style="color:#9aedfe">Date</span>;
-</span></span><span style="display:flex;"><span>  updatedAt: <span style="color:#9aedfe">Date</span>;
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> Product <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  id: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  title: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  price: <span style="color:#9aedfe">number</span>;
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// Intersection (AND): combines all properties from both types
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> TrackedProduct <span style="color:#ff6ac1">=</span> Product <span style="color:#ff6ac1">&amp;</span> Timestamped;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">const</span> item: <span style="color:#9aedfe">TrackedProduct</span> <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  id<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"prod-101"</span>,
-</span></span><span style="display:flex;"><span>  title<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"Mechanical Keyboard"</span>,
-</span></span><span style="display:flex;"><span>  price: <span style="color:#9aedfe">89.99</span>,
-</span></span><span style="display:flex;"><span>  createdAt: <span style="color:#9aedfe">new</span> <span style="color:#ff5c57">Date</span>(),
-</span></span><span style="display:flex;"><span>  updatedAt: <span style="color:#9aedfe">new</span> <span style="color:#ff5c57">Date</span>(),
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div></section><section>
-<h3 id="qualche-esempio-di-type--2">Qualche esempio di <code>type</code> / 2</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> Action <span style="color:#ff6ac1">=</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">|</span> { <span style="color:#ff6ac1">type</span><span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"LOGIN"</span>; payload<span style="color:#ff6ac1">:</span> { userId: <span style="color:#9aedfe">string</span> } }
-</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">|</span> { <span style="color:#ff6ac1">type</span><span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"LOGOUT"</span> }
-</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">|</span> { <span style="color:#ff6ac1">type</span><span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"UPDATE_EMAIL"</span>; payload<span style="color:#ff6ac1">:</span> { newEmail: <span style="color:#9aedfe">string</span> } };
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff5c57">function</span> handleAction(action: <span style="color:#9aedfe">Action</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">switch</span> (action.<span style="color:#ff6ac1">type</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">case</span> <span style="color:#5af78e">"LOGIN"</span><span style="color:#ff6ac1">:</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#78787e">// TypeScript automatically narrows the type: payload and userId are guaranteed
-</span></span></span><span style="display:flex;"><span>      console.log(<span style="color:#5af78e">"Logged in user:"</span>, action.payload.userId);
-</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">break</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">case</span> <span style="color:#5af78e">"LOGOUT"</span><span style="color:#ff6ac1">:</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#78787e">// payload does not exist on this branch
-</span></span></span><span style="display:flex;"><span>      console.log(<span style="color:#5af78e">"User logged out"</span>);
-</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">break</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff6ac1">case</span> <span style="color:#5af78e">"UPDATE_EMAIL"</span><span style="color:#ff6ac1">:</span>
-</span></span><span style="display:flex;"><span>      console.log(<span style="color:#5af78e">"New email:"</span>, action.payload.newEmail);
-</span></span><span style="display:flex;"><span>      <span style="color:#ff6ac1">break</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div></section><section>
-<h3 id="qualche-esempio-di-type--3">Qualche esempio di <code>type</code> / 3</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> AppConfig <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  port: <span style="color:#9aedfe">number</span>;
-</span></span><span style="display:flex;"><span>  host: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  debugMode: <span style="color:#9aedfe">boolean</span>;
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// Extracted union: "port" | "host" | "debugMode"
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> ConfigKey <span style="color:#ff6ac1">=</span> <span style="color:#ff6ac1">keyof</span> AppConfig;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// Lookup type: resolves to number
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> PortType <span style="color:#ff6ac1">=</span> AppConfig[<span style="color:#5af78e">"port"</span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff5c57">function</span> getConfigValue(config: <span style="color:#9aedfe">AppConfig</span>, key: <span style="color:#9aedfe">ConfigKey</span>) {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">return</span> config[key];
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div></section><section>
-<h3 id="qualche-esempio-di-type--4">Qualche esempio di <code>type</code> / 4</h3>
-<h4 id="built-in-types-partial-pick-omit-record">Built-in types: <code>Partial&lt;&gt;</code>, <code>Pick&lt;&gt;</code>, <code>Omit&lt;&gt;</code>, <code>Record&lt;&gt;</code></h4>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> User <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  id: <span style="color:#9aedfe">number</span>;
-</span></span><span style="display:flex;"><span>  username: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  email: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  passwordHash: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// 1. Partial: marks every field as optional (ideal for PATCH payloads)
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> UpdateUserDto <span style="color:#ff6ac1">=</span> Partial&lt;<span style="color:#ff6ac1">User</span>&gt;;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// 2. Pick: selects only the specified keys
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> PublicProfile <span style="color:#ff6ac1">=</span> Pick&lt;<span style="color:#ff6ac1">User</span>, <span style="color:#5af78e">"id"</span> <span style="color:#ff5c57">|</span> <span style="color:#5af78e">"username"</span>&gt;;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// 3. Omit: excludes specific sensitive keys
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> SafeUser <span style="color:#ff6ac1">=</span> Omit&lt;<span style="color:#ff6ac1">User</span>, <span style="color:#5af78e">"passwordHash"</span>&gt;;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// 4. Record: constructs an object type with specific keys and values
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> Permission <span style="color:#ff6ac1">=</span> <span style="color:#5af78e">"read"</span> <span style="color:#ff6ac1">|</span> <span style="color:#5af78e">"write"</span> <span style="color:#ff6ac1">|</span> <span style="color:#5af78e">"admin"</span>;
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">type</span> RolePermissions <span style="color:#ff6ac1">=</span> Record&lt;<span style="color:#ff6ac1">Permission</span>, <span style="color:#57c7ff">boolean</span>&gt;;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">const</span> guestPermissions: <span style="color:#9aedfe">RolePermissions</span> <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  read: <span style="color:#9aedfe">true</span>,
-</span></span><span style="display:flex;"><span>  write: <span style="color:#9aedfe">false</span>,
-</span></span><span style="display:flex;"><span>  admin: <span style="color:#9aedfe">false</span>,
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div></section><section>
-<h3 id="qualche-esempio-di-interface--1">Qualche esempio di <code>interface</code> / 1</h3>
-<h4 id="ereditarietà-su-più-livelli"><strong>Ereditarietà</strong> su <strong>più livelli</strong></h4>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> BaseEntity {
-</span></span><span style="display:flex;"><span>  id: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  createdAt: <span style="color:#9aedfe">Date</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// Single extension: Person inherits id and createdAt
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> Person <span style="color:#ff6ac1">extends</span> BaseEntity {
-</span></span><span style="display:flex;"><span>  firstName: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  lastName: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  email: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// Chained extension: Employee inherits from Person (and transitively from BaseEntity)
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> Employee <span style="color:#ff6ac1">extends</span> Person {
-</span></span><span style="display:flex;"><span>  salary: <span style="color:#9aedfe">number</span>;
-</span></span><span style="display:flex;"><span>  role<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"junior"</span> <span style="color:#ff6ac1">|</span> <span style="color:#5af78e">"mid"</span> <span style="color:#ff6ac1">|</span> <span style="color:#5af78e">"senior"</span>;
-</span></span><span style="display:flex;"><span>  hiredAt: <span style="color:#9aedfe">Date</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">const</span> developer: <span style="color:#9aedfe">Employee</span> <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  id<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"emp-42"</span>,
-</span></span><span style="display:flex;"><span>  createdAt: <span style="color:#9aedfe">new</span> <span style="color:#ff5c57">Date</span>(<span style="color:#5af78e">"2024-01-01"</span>),
-</span></span><span style="display:flex;"><span>  firstName<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"Jane"</span>,
-</span></span><span style="display:flex;"><span>  lastName<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"Doe"</span>,
-</span></span><span style="display:flex;"><span>  email<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"jane.doe@example.com"</span>,
-</span></span><span style="display:flex;"><span>  salary: <span style="color:#9aedfe">85000</span>,
-</span></span><span style="display:flex;"><span>  role<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"senior"</span>,
-</span></span><span style="display:flex;"><span>  hiredAt: <span style="color:#9aedfe">new</span> <span style="color:#ff5c57">Date</span>(<span style="color:#5af78e">"2024-03-01"</span>),
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div></section><section>
-<h3 id="qualche-esempio-di-interface--2">Qualche esempio di <code>interface</code> / 2</h3>
-<h4 id="composizione-di-interfacce"><strong>Composizione</strong> di interfacce</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> Sizable {
-</span></span><span style="display:flex;"><span>  width: <span style="color:#9aedfe">number</span>;
-</span></span><span style="display:flex;"><span>  height: <span style="color:#9aedfe">number</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> Stylable {
-</span></span><span style="display:flex;"><span>  backgroundColor: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  borderColor?: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> Clickable {
-</span></span><span style="display:flex;"><span>  onClick<span style="color:#ff6ac1">:</span> (event: <span style="color:#9aedfe">MouseEvent</span>) <span style="color:#ff6ac1">=&gt;</span> <span style="color:#ff6ac1">void</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// Composes three distinct behaviors into a single UI contract
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> ButtonProps <span style="color:#ff6ac1">extends</span> Sizable, Stylable, Clickable {
-</span></span><span style="display:flex;"><span>  label: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  disabled: <span style="color:#9aedfe">boolean</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff6ac1">const</span> submitButton: <span style="color:#9aedfe">ButtonProps</span> <span style="color:#ff6ac1">=</span> {
-</span></span><span style="display:flex;"><span>  width: <span style="color:#9aedfe">140</span>,
-</span></span><span style="display:flex;"><span>  height: <span style="color:#9aedfe">44</span>,
-</span></span><span style="display:flex;"><span>  backgroundColor<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"#0070f3"</span>,
-</span></span><span style="display:flex;"><span>  label<span style="color:#ff6ac1">:</span> <span style="color:#5af78e">"Submit Form"</span>,
-</span></span><span style="display:flex;"><span>  disabled: <span style="color:#9aedfe">false</span>,
-</span></span><span style="display:flex;"><span>  onClick<span style="color:#ff6ac1">:</span> (e) <span style="color:#ff6ac1">=&gt;</span> console.log(<span style="color:#5af78e">"Clicked at coordinates:"</span>, e.clientX, e.clientY),
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div></section><section>
-<h3 id="qualche-esempio-di-interface--3">Qualche esempio di <code>interface</code> / 3</h3>
-<h4 id="restringimento--sovrascrittura-delle-proprietà"><strong>Restringimento</strong> / <strong>sovrascrittura</strong> delle proprietà</h4>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> GenericItem {
-</span></span><span style="display:flex;"><span>  id: <span style="color:#9aedfe">string</span> <span style="color:#ff6ac1">|</span> <span style="color:#9aedfe">number</span>;
-</span></span><span style="display:flex;"><span>  payload: <span style="color:#9aedfe">unknown</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#78787e">// Narrows 'id' strictly to string and provides a concrete shape for 'payload'
-</span></span></span><span style="display:flex;"><span><span style="color:#ff6ac1">interface</span> ArticleItem <span style="color:#ff6ac1">extends</span> GenericItem {
-</span></span><span style="display:flex;"><span>  id: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>  payload<span style="color:#ff6ac1">:</span> {
-</span></span><span style="display:flex;"><span>    title: <span style="color:#9aedfe">string</span>;
-</span></span><span style="display:flex;"><span>    tags: <span style="color:#9aedfe">string</span>[];
-</span></span><span style="display:flex;"><span>  };
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div></section><section>
-<h3 id="funzioni-tipizzate">Funzioni tipizzate</h3>
-<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="nohighlight" data-noescape=""><span style="display:flex;"><span><span style="color:#ff5c57">function</span> calcolaTotale(prezzo: <span style="color:#9aedfe">number</span>, sconto: <span style="color:#9aedfe">number</span> <span style="color:#ff6ac1">=</span> <span style="color:#ff9f43">0</span>)<span style="color:#ff6ac1">:</span> <span style="color:#9aedfe">number</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff6ac1">return</span> prezzo <span style="color:#ff6ac1">-</span> sconto;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div></section><section>
-<h3 id="installazione-di-typescript"><strong>Installazione</strong> di TypeScript</h3>
-<ol>
-<li>Assicurarsi di avere NodeJS installato</li>
-</ol>
-<blockquote>
-<p>in un terminale, digitare <code>node --version</code> <br>
-(output atteso: una versione di node, tipo <code>v24.13.1</code>)</p>
-</blockquote>
-<ol start="2">
-<li>All’interno di un progetto, sempre da terminale, scrivere</li>
-</ol>
-<blockquote>
-<p><code>npm install -D typescript</code> <br>
-(<code>-D</code>: salva come dipendenza del progetto - equivale a <code>--save-dev</code>)</p>
-</blockquote>
-<ol start="3">
-<li>Per compilare un file <code>.ts</code>:</li>
-</ol>
-<blockquote>
-<p><code>npx tsc app.ts</code></p>
-</blockquote>
-</section><section>
-<div class="container-fluid m-0 p-0">
-    <div class="row "><div class="col "><h3 id="nodejs"><strong>NodeJS</strong></h3>
-<h4 id="il-file-packagejson">Il file <code>package.json</code></h4>
-<p>Identità del progetto, indicazione delle dipendenze necessarie, script eseguibili (<code>npm run dev</code>, <code>npm test</code>…)</p>
-<div class="callout note">
-    <div class="callout-background py-4 px-5"><div class="callout-content"><p>“Lista dei desideri, astratta e flessibile”.</p>
-</div></div>
-</div>
-</div>
-<div class="col "><h3 id="nodejs"><strong>NodeJS</strong></h3>
-<h4 id="il-file-package-lockjson">Il file <code>package-lock.json</code></h4>
-<p>Dipendenze con versioni precise, URL di download, hash crittografico per certificare l’autenticità del file.</p>
-<div class="callout note">
-    <div class="callout-background py-4 px-5"><div class="callout-content"><p>“Fotografia del progetto, fissata e deterministica”.</p>
-</div></div>
-</div>
-</div>
-<div class="col "><h3 id="ts-only"><strong>TS</strong>-Only</h3>
-<h4 id="il-file-tsconfig">Il file <code>.tsconfig</code></h4>
-<p>Cuore di ogni progetto TypeScript - configurazioni della logica del transpiler.</p>
-<div class="callout note">
-    <div class="callout-background py-4 px-5"><div class="callout-content"><p>Parametri importanti:</p>
-<ol>
-<li><code>target</code>: versioni del JS in output;</li>
-<li><code>strict: true</code>: abilita controlli rigorosi</li>
-<li><code>moduleResolution</code>: gestisce import/export</li>
-<li><code>noImplicitAny</code>: impedisce <code>any</code> impliciti</li>
-</ol>
-</div></div>
-</div>
-</div>
-</div>
-</div>
 
 </section>
 </section>
@@ -1673,7 +1583,7 @@ Bootstrap is used by 14.4% of all the websites, that is a CSS framework market s
 
 
   
-  <script type="text/javascript" src="./web-01/mermaid.min_16862243754454536095.js"></script>
+  <script type="text/javascript" src="./web-standards-intro/mermaid.min_16862243754454536095.js"></script>
   <script type="text/javascript">
     mermaid.initialize({startOnLoad: false});
     let render = (event) => {
