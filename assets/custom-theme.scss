@@ -21,7 +21,7 @@ $codeFont: 'JetBrains Mono';
 	You may want a logo to be displayed 
 	on the bottom-left of the slides 
 */
-$logo: url("../imgs/pascal-logo.png");
+$logo: url("../imgs/isis-logo-nobg.png");
 
 $dark-theme: false !default;
 
@@ -31,7 +31,7 @@ $backgroundColor: #fcfcfc;
 
 $mainFontSize: 40px;
 $mainColor: #000000;
-$accentClr: #dc7b04;
+$accentClr: #891d4e;
 $codeClr: $accentClr;
 
 // Callouts styling
@@ -113,10 +113,10 @@ h5 {
 	// Uncomment to add bottom right logo in every slide
 	background-image: $logo;
 	background-repeat: no-repeat;
-	background-position: -30% 100%;
-	background-size: 40%;
+	background-position: -40% 110%;
+	background-size: 60%;
 	background-clip: border-box;
-	filter: opacity(.2) grayscale(100%);
+	filter: opacity(.1) grayscale(100%);
 
 	// Uncomment to add slides border
 	// border-style: solid;
@@ -129,7 +129,7 @@ h5 {
 }
 
 .reveal .navigate-left::before {
-	content: "N. Magi";
+	content: "N. Magi - Introduzione al Web";
 	min-width: max-content;
 	display: block;
 	align-content: center;
@@ -177,7 +177,7 @@ h5 {
 }
 
 .reveal blockquote {
-	background-color: rgba($color: $accentClr, $alpha: .2);
+	background-color: lighten($accentClr, 60%);
 	border-radius: 20px;
 	border: 2px solid $accentClr;
 	box-shadow: 5px 5px 0px $accentClr;

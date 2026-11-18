@@ -2,7 +2,7 @@
 +++
 
 title = "Web Intro - HTML, CSS, JS"
-description = "A Hugo theme for creating Reveal.js presentations"
+description = "Introduzione alla programmazione Web"
 outputs = ["Reveal"]
 aliases = [
     "/guide/"
@@ -10,18 +10,18 @@ aliases = [
 
 +++
 
+##### Istituto Tecnico Economico "Giovanni Agnelli" **@** Cesenatico
 {{% accentify "top-right" %}}
 # Introduzione al **Web**
 {{% /accentify %}}
 
 ## I web standard: **HTML**, **CSS**, **JavaScript**
-### + **TypeScript**: JavaScript tipizzato
 
 <small>
 
 A cura di Nicholas Magi
 
-`nicholas.magi[at]ispascalcomandini.it`
+`nicholasmagi[at]davincicesenatico.it`
 
 </small>
 
@@ -33,7 +33,17 @@ A cura di Nicholas Magi
 ---
 {{% section %}}
 
-# Il Web
+#### Parte **#01**.
+# **Il Web**
+## Definizione, architettura, interazioni.
+
+---
+
+<br>
+<br>
+<br>
+    
+## Il Web
 
 {{% callout type="cite" src="[Enciclopedia Treccani]" srcLink="https://www.treccani.it/enciclopedia/web_%28Enciclopedia-Italiana%29/" %}}
 Il **web** (abbreviazione di *world wide web*, 'ragnatela mondiale', spesso indicato brevemente anche come www) è un sistema di **interconnessione tra documenti** basato sull'infrastruttura di Internet che permette l'accesso a tutta l'informazione disponibile su computer collegati in rete.
@@ -41,19 +51,73 @@ Il **web** (abbreviazione di *world wide web*, 'ragnatela mondiale', spesso indi
 
 ---
 
-### Sul **web** possono essere disponibili **qualsiasi tipo di documenti**.
+### Sul **web** possono essere disponibili <br> **qualsiasi tipo di documenti**.
 
 Immagini, video, audio, documenti Word, PDF...
 
 ---
 
-### Architettura **Client-Server** 
+## Come **interagiamo** con il **web**?
 
-<img class="w-50" src="imgs/web-arch.png"/>
+{{% callout type="warning" %}}
+**browser** $\neq$ **motore di ricerca**!
+{{% /callout %}}
+
+{{% multicol %}}
+{{% col %}}
+
+### Browser
+
+> "**Programma** - software - installabile su un dispositivo che si **interfaccia con il web** e permette di **visualizzare ciò che cerchi**."
+
+<br>
+
+- esempio: Google Chrome, Apple Safari, Microsoft Edge, Mozilla Firefox, Brave, Opera, **Tor Browser**...
+{{% /col %}}
+{{% col %}}
+
+### Motore di ricerca
+
+> "**Servizio** fruibile da browser che permette, mediante **parole chiave** e strumenti specializzati, di cercare risorse sul web."
+
+<br>
+
+- esempio: Google, DuckDuckGo, Yahoo, Bing...
+
+{{% /col %}}
+{{% /multicol %}}
+
 
 ---
 
-### Cosa succede quando si fa una richiesta sul web?
+### Architettura **Client-Server** 
+
+{{% multicol %}}
+{{% col %}}
+#### In generale
+<img src="imgs/web-arch.png"/>
+{{% /col %}}
+{{% col %}}
+#### In particolare
+<img src="imgs/web-arch-2.0.png"/>
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+### Cosa succede quando si fa una richiesta sul web? / 1
+
+<img src="imgs/lookup.png" class="w-75" />
+
+<small>
+
+Da *MDN Web Docs, Populating the page: how browsers work* - https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/How_browsers_work
+
+</small>
+
+---
+
+### Cosa succede quando si fa una richiesta sul web? / 2
 
 ```mermaid
 sequenceDiagram
@@ -65,7 +129,45 @@ sequenceDiagram
     Server-->>+Client (Browser): HTTP-RES Cannot find what you were looking for! `404 NOT FOUND`
 ```
 
+---
+
+### **Approfondimento**: operatori di ricerca e Google Dorking / 1
+
+Quando interrogo un motore di ricerca, posso utilizzare determinate **parole chiave** per filtrare i risultati/vincolare il motore di ricerca stesso.
+
+Qualche esempio:
+
+<div class="bg-white rounded rounded-lg shadow-sm border border-4 p-2">
+
+| Operatore            | Utilizzo                                                                                                         | Esempio - da digitare sulla barra di ricerca del browser |
+|----------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| `filetype:pdf`       | Filtra solo i file di tipo `pdf` (*posso cercare qualunque estensione*).                                         | `HTML Cheatsheet filetype:pdf`                           |
+| `site:repubblica.it` | Filtra solo i risultati provenienti dal sito `repubblica.it` (*posso sostituire con qualunque URL*).             | `Tecnologia site:repubblica.it`                          |
+| `inurl:admin`        | Filtra solo le pagine in cui la parola "*admin*" è presente nell'URL. (*posso sostituire con qualunque parola*). | `portaleargo.it inurl:areautenti`                        |
+
+</div>
+
+---
+
+### **Approfondimento**: operatori di ricerca e Google Dorking / 2
+
+Tanti altri operatori!
+
+Combinazioni "notevoli" di più operatori raccolte nel **GHDB** (*Google Hacking Database*).
+
+<img src="image.png" class="w-50">
+
+> Visita il sito: https://www.exploit-db.com/google-hacking-database
+
 {{% /section %}}
+
+---
+
+{{% section %}}
+
+#### Parte **#02**.
+# **Web Standards**
+## Introduzione agli strumenti del web, il DOM.
 
 ---
 
@@ -81,28 +183,57 @@ sequenceDiagram
 
 ---
 
-## Dispense di un "vecchio" seminario
 
-"**[React for Dummies / Web Basics](
-https://github.com/Nickolausen/react-for-dummies/tree/master/web-basics)**", corso pomeridiano PNRR **@** I.T.T. "Blaise Pascal"
+<img src="imgs/metaphor.png" class="w-50"/>
+
+<small>**Disclaimer**: Immagine generata da Intelligenza Artificiale - Google Gemini.</small>
+
+{{% multicol %}}
+{{% col %}}
+
+## HTML
+**Struttura** di un documento.
+- "**Com'è fatta** una pagina."
+
+{{% /col %}}
+{{% col %}}
+
+## CSS
+**Presentazione** di un documento.
+- "**Come si presenta** una pagina."
+
+{{% /col %}}
+{{% col %}}
+
+## JavaScript
+**Interattività** di un documento.
+- "**Quali funzionalità** ha una pagina."
+
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+## Come funziona un **browser**? / 2
+
+{{% /section %}}
 
 ---
 
 {{% section %}}
 
+#### Parte **#03**.
+# **HTML**
+## Tag e loro semantica, attributi, esempi vari.
+
+---
+
 <img style="max-width: 128px" class="exclude" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" />
 
 <br>
 
-<small>
-<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>
-</small>
-
-
 ## **HTML**
 ### **H**yperText **M**arkup **L**anguage
-
-[Guida di riferimento: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ---
 
@@ -125,9 +256,18 @@ https://github.com/Nickolausen/react-for-dummies/tree/master/web-basics)**", cor
 
 ## HTML: **Tag**
 
+{{% multicol %}}
+{{% col %}}
 - Una pagina si compone di un insieme di **tag**:
   - ogni tag è composto da un **nome** (*case insensitive*) circondato da `<` e `>`;
   - per ogni tag possono essere specificati alcuni attributi coppia `nome="valore"` che specifica alcune proprietà dell’elemento
+{{% /col %}}
+{{% col %}}
+
+![alt text](imgs/tags.png)
+
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
@@ -136,21 +276,26 @@ https://github.com/Nickolausen/react-for-dummies/tree/master/web-basics)**", cor
 
 ### Codice sorgente
 
-```html { linenos=inline hl_lines=["4", "15"] }
+```html { linenos=inline hl_lines=["4", "20"] }
 <!DOCTYPE html> 
 <!-- Dichiaro il tipo di documento -->
 
 <html>
   <!-- Parte di metadati della pagina -->
-    <head>
-      <title>Il mio bellissimo sito</title>
-    </head>
+  <head>
+    <title>Il mio bellissimo sito</title>
+  </head>
 
-    <!-- Contenuto della pagina -->
-    <body>
-      <p>Lorem Ipsum Ipse Dixit</p>
-        <a href="www.google.com">Mi sento fortunato</a>
-    </body>
+  <!-- Contenuto della pagina -->
+  <body>
+    <h1 style="text-align: center">My ToDo List</h1>
+    <ul>
+      <li>Fai i compiti</li>
+      <li>Gioca a Call Of Duty</li>
+      <li>Vai in palestra</li>
+    </ul>
+    <a href="www.google.com">Cerca su Google</a>
+  </body>
 </html>
 ```
 {{% callout %}}
@@ -162,21 +307,27 @@ In evidenza il tag `<html>`, **radice** della pagina.
 
 ### Render
 
-<iframe height="500"
+<iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" 
   sandbox
+  src='about:blank'
   srcdoc="<!DOCTYPE html> 
 <!-- Dichiaro il tipo di documento -->
 
 <html>
-  <!-- Parte di metadati della pagina -->
+    <!-- Parte di metadati della pagina -->
     <head>
       <title>Il mio bellissimo sito</title>
     </head>
 
     <!-- Contenuto della pagina -->
     <body>
-      <p>Lorem Ipsum Ipse Dixit</p>
-        <a href="www.google.com">Mi sento fortunato</a>
+      <h1 style="text-align: center">My ToDo List</h1>
+      <ul>
+        <li>Fai i compiti</li>
+        <li>Gioca a Call Of Duty</li>
+        <li>Vai in palestra</li>
+      </ul>
+      <a href="www.google.com">Cerca su Google</a>
     </body>
 </html>">
 </iframe>
@@ -191,6 +342,324 @@ In evidenza il tag `<html>`, **radice** della pagina.
 ![Semantica](imgs/semantica.png)
 
 Ogni tag deve essere usato in accordo con il **contenuto che deve rappresentare**.
+
+---
+
+## Suddivisione in categorie
+<br>
+
+{{% multicol %}}
+{{% col %}}
+Di tag ce ne sono tanti, e possiamo dividerli in categorie in base al **tipo di contenuto** che rappresentano (un paragrafo? un audio? una lista?).
+
+<br>
+
+{{% callout type="tip" %}}
+*Non ci interessa impararli tutti a memoria!* Dobbiamo diventare abili nel **consultare la documentazione**.
+{{% /callout %}}
+
+<br>
+
+Guide di riferimento: 
+- [Mozilla Developer Network - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [W3Schools](https://w3schools.com/html)
+
+{{% /col %}}
+{{% col %}}
+1. **Basic HTML**
+2. Formatting
+3. Forms and Input
+4. Iframe
+5. **Images**
+6. Audio/Video
+7. **Links**
+8. **Lists**
+9. Tables
+10. Styles and semantics
+11. Meta Info
+12. Programming
+
+<br>
+<br>
+
+<small>Da W3Schools: https://www.w3schools.com/tags/ref_byfunc.asp </small>
+
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+### `<p>` - Basic HTML / 1
+
+Con il tag `<p>` rappresentiamo un **paragrafo** (*p — paragraph*, in inglese)
+- blocchi di un testo
+- elementi semanticamente correlati
+
+<br>
+<br>
+
+{{% multicol %}}
+{{% col class="col-6" %}}
+```html { linenos="inline" hl_lines=["7-14"] }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - paragraphs</title>
+  </head>
+  <body>
+    <p>
+      Geckos are a group of usually small, usually nocturnal lizards. They are found
+      on every continent except Antarctica.
+    </p>
+    <p>
+      Some species live in houses where they hunt insects attracted by artificial
+      light.
+    </p>
+  </body>
+</html>
+```
+{{% /col %}}
+
+{{% col class="col-6" %}}
+<iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" 
+  sandbox
+  src='about:blank'
+  srcdoc="<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - paragraphs</title>
+  </head>
+  <body>
+    <p>
+      Geckos are a group of usually small, usually nocturnal lizards. They are found
+      on every continent except Antarctica.
+    </p>
+    <p>
+      Some species live in houses where they hunt insects attracted by artificial
+      light.
+    </p>
+  </body>
+</html>">
+</iframe>
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+### `<h1></h1>` - `<h6></h6>` - Basic HTML / 2
+
+{{% multicol %}}
+{{% col %}}
+Con i tag `<h1>` — `<h6>` rappresentiamo sei livelli di **intestazione** (*h — heading*, in inglese).
+- il livello più alto (importante) è `<h1>`
+- il livello più basso (meno importante) è `<h6>` 
+{{% /col %}}
+
+{{% col %}}
+{{% callout title="Accessibilità" %}}
+È buona norma prevedere **un solo** `h1` per pagina, e utilizzare correttamente i livelli di annidamento dei tag (*non saltare/mescolare i livelli!*).
+{{% /callout %}}
+{{% /col %}}
+{{% /multicol %}}
+
+<br>
+
+{{% multicol %}}
+{{% col %}}
+```html { linenos="inline" hl_lines=["7-13"] }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - paragraphs</title>
+  </head>
+  <body>
+    <h1>Beetles</h1>
+    <h2>External morphology</h2>
+    <h3>Head</h3>
+    <h4>Mouthparts</h4>
+    <h3>Thorax</h3>
+    <h4>Prothorax</h4>
+    <h4>Pterothorax</h4>
+  </body>
+</html>
+```
+{{% /col %}}
+{{% col %}}
+<iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" 
+  sandbox
+  src='about:blank'
+  srcdoc="<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - paragraphs</title>
+  </head>
+  <body>
+    <h1>Beetles</h1>
+    <h2>External morphology</h2>
+    <h3>Head</h3>
+    <h4>Mouthparts</h4>
+    <h3>Thorax</h3>
+    <h4>Prothorax</h4>
+    <h4>Pterothorax</h4>
+  </body>
+</html>">
+</iframe>
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+### `<a></a>` - Links / 3
+
+Con il tag `<a>` definiamo un **collegamento** (*a — anchor*, in inglese) <br> ad un sito web/documento/risorsa presente nel web.
+- con l'**attributo** `href` specifichiamo il *percorso* del collegamento (**DOVE** si trova la risorsa);
+- come contenuto del tag possiamo specificare il testo (l'etichetta) con cui viene mostrato il link.
+
+<br>
+<br>
+
+{{% multicol %}}
+{{% col %}}
+```html { linenos="inline" hl_lines=["7-10"] }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - links</title>
+  </head>
+  <body>
+    <a href="www.google.com">Vai su Google.</a>
+    <a href="www.google.com" target="_blank">
+      Vai su Google - in un'altra scheda.
+    </a>
+  </body>
+</html>
+```
+{{% /col %}}
+{{% col %}}
+<iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" 
+  sandbox
+  src='about:blank'
+  srcdoc='<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - links</title>
+  </head>
+  <body>
+    <a href="https://www.google.com/">Vai su Google.</a>
+    <br>
+    <a href="www.google.com" target="_blank">
+      Vai su Google - in altra scheda.
+    </a>
+  </body>
+</html>'>
+</iframe>
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+### `<img/>` - Images / 4
+
+Con il tag `<img/>` (attenzione, è un "*self-closing tag!*") possiamo includere un'**immagine** (*img — image*, in inglese) <br> nella nostra pagina HTML.
+
+Ci sono **due attributi obbligatori** per poter utilizzare correttamente il tag:
+- con l'attributo `src` specifichiamo il *percorso* all'immagine
+  - può essere locale nel nostro computer;
+  - può essere un'immagine presente nel web;
+- con l'attributo `alt` specifichiamo un testo alternativo che viene visualizzato quando un'immagine, per qualche ragione, non viene correttamente caricata. 
+
+<br>
+
+{{% multicol %}}
+{{% col %}}
+```html { linenos="inline" hl_lines=["7-14"] }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - links</title>
+  </head>
+  <body>
+    <img 
+      src="https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg" 
+      alt="Profilo di Tim Berners Lee"
+    />
+    <img 
+      src="imgs/web-arch.png" 
+      alt="Architettura Web"
+    />
+  </body>
+</html>
+```
+{{% /col %}}
+{{% col %}}
+<iframe class="w-100 rounded shadow-lg h-100" style="border: 5px solid black" 
+  sandbox
+  src='about:blank'
+  srcdoc='<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Test - links</title>
+    <style>
+      img {
+        max-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img 
+      src="https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg" 
+      alt="Profilo di Tim Berners Lee"/>
+    <br>
+    <img 
+      src="imgs/web-arch.png" 
+      alt="Architettura Web"
+    />
+  </body>
+</html>'>
+</iframe>
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+### `<ul></ul>`, `<ol></ol>`, `<li></li>` - Lists / 5
+
+Con `<ul>`, `<ol>` (esisterebbe anche `<dl>`, qui non approfondito) rappresentiamo delle liste di elementi **semanticamente** correlati. 
+
+<br>
+
+{{% multicol class="d-flex gap-2" %}}
+{{% col class="border border-warning border-5 rounded flex-grow"%}}
+#### `<li>` - List Item
+Singolo elemento di una lista. Va sempre usato come figlio diretto di un tag `<ul>`/`<ol>`. 
+{{% /col %}}
+{{% col class="border border-warning border-5 rounded flex-grow"%}}
+#### `<ul>` - Unordered List
+Rappresenta una lista dove l'ordine degli elemento **non conta**. Uno stile predefinito mostra gli elementi affiancati da un "•".
+
+```html { linenos=inline hl_lines=[2, 6]}
+<h2>ToDo List</h2>
+<ul>
+  <li>Homework</li>
+  <li>Shopping</li>
+  <li>Work</li>
+</ul>
+```
+{{% /col %}}
+{{% col class="border border-warning border-5 rounded flex-grow"%}}
+#### `<ol>` - Ordered List
+Rappresenta una lista dove l'ordine degli elemento **conta**. Uno stile predefinito mostra gli elementi affiancati da un numero progressivo relativo alla loro posizione in lista.
+
+```html { linenos=inline hl_lines=[2, 6]}
+<h2>ToDo List</h2>
+<ol>
+  <li>Homework</li>
+  <li>Shopping</li>
+  <li>Work</li>
+</ol>
+```
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
@@ -246,24 +715,6 @@ Scheletro del codice sorgente e render corrispondente (*decorato con CSS!*)
 
 ---
 
-#### Alcuni tag fondamentali
-### `<img/>`
-
-- `<img src="link-to-img" alt="what-img-represents">`
-  - `src`: percorso dell’immagine (salvata nel filesystem o sul web)
-  - `alt`: testo alternativo (mostrato quando l’immagine non viene caricata correttamente)
-
----
-
-#### Alcuni tag fondamentali
-### `<a></a>`
-
-`<a href="www.google.com" target="_blank">Clicca qui</a>`
-  - `href`: URL del tag.
-  - `target`: specifica dove deve essere aperto quel link — `_blank` indica “in una nuova tab”.
-
----
-
 ## Attributi
 
 - Ce ne sono tanti, alcuni visti poco fa (`href`, `target`, `src`, `alt`...)
@@ -283,19 +734,17 @@ Scheletro del codice sorgente e render corrispondente (*decorato con CSS!*)
 
 Entrambi permettono di interagire con il documento HTML tramite **fogli di stile** o **script esterni**.
 
----
-
-## Attività **#01**
-
-<img class="w-75" src="imgs/gravatar.png">
-
-https://it.gravatar.com/
-
 {{% /section %}}
 
 ---
 
 {{% section %}}
+
+#### Parte **#04**.
+# **CSS**
+## Importazione, regole di stile, selettori, specificità, esempi vari.
+
+---
 
 <img class="exclude" style="max-width: 128px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/960px-Official_CSS_Logo.svg.png" />
 
@@ -497,7 +946,7 @@ a[href="https://www.google.com"] {
     </tr>
     <tr>
       <td><code>proprietà</code></td>
-      <td>caratteristica di stile assegnabile ad un elemento</td>
+      <td>uno stile di un elemento</td>
       <td><code>margin</code>, <code>padding</code>...</td>
     </tr>
   </tbody>
@@ -918,6 +1367,12 @@ https://getbootstrap.com/
 
 {{% section %}}
 
+#### Parte **#05**.
+# **JavaScript**
+## Sintassi base, tipi di dato, DOM Manipulation, strutture dati.
+
+---
+
 <img class="exclude" style="max-width: 128px;" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/960px-JavaScript-logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20120221235433" />
 
 ## **JS**
@@ -1254,534 +1709,6 @@ const uniqueItems = [
 console.log(uniqueItems); 
 // Output: ["apple", "pear", "banana"]
 ```
-{{% /col %}}
-{{% /multicol %}}
-
----
-
-### Breve - e doveroso - cenno "**storico**" / 1
-
-È molto facile fare **confusione** tra diversi standard / concetti base / versioni di JavaScript:
-
-<br>
-
-{{% multicol %}}
-
-{{% col %}}
-
-#### ECMAScript (ES)
-
-**Standard JavaScript** (modello teorico)
-- grammatica e regolamento formale del linguaggio
-- redatto da comitato tecnico TC39 dell'organizzazione ECMA International
-
-{{% /col %}}
-
-{{% col %}}
-
-#### **JavaScript (JS)**
-
-**Implementazione** della specifica teorica nei vari **browser**.
-
-{{% /col %}}
-
-{{% /multicol %}}
-
----
-
-### Breve - e doveroso - cenno "**storico**" / 2
-
-Quando nel 2009 è nato **Node.js** per eseguire JS fuori dal browser, gli sviluppatori avevano bisogno urgente di un sistema a **moduli** per **gestire progetti complessi**.
-
-<br>
-
-{{% multicol %}}
-{{% col %}}
-
-#### **CommonJS** (CJS)
-
-Prima gestione dei **moduli** (librerie esterne) teorizzata dalla *community* e adottata da NodeJS.
-
-```js
-// Sintassi CommonJS (CJS)
-
-// IMPORTAZIONE MODULI (inizio file)
-const express = require('express');
-
-// ESPORTAZIONE MODULI (fine file)
-module.exports = { miaFunzione };
-```
-
-{{% /col %}}
-
-{{% col %}}
-
-{{% callout type="tip" %}}
-#### ECMAScript <br> **ESModules** (ESM)
-
-Nel 2015, con ES6, il comitato ECMAScript ha finalmente introdotto un sistema di moduli ufficiale e nativo.
-
-```js
-// Sintassi ES Modules (ESM)
-
-// IMPORTAZIONE MODULI (inizio file)
-import express from 'express';
-
-// ESPORTAZIONE MODULI (fine file)
-export { miaFunzione };
-```
-{{% /callout %}}
-
-{{% /col %}}
-{{% /multicol %}}
-
----
-
-### Breve - e doveroso - cenno "**storico**" / 3
-
-#### Versionamento
-
-{{% multicol %}}
-{{% col %}}
-##### **Prima** del 2015 (*ES1-ES6*)
-- Una release ogni tot anni, accumulando feature per ogni rilascio
-- Nomenclatura con progressivo
-  - ES1
-  - ES2
-  - ES3
-  - *ES4 - non presente*
-  - ES5
-  - **ES6** - la più importante
-    - arrow functions
-    - `let`/`const`
-    - classi
-    - moduli nativi
-{{% /col %}}
-{{% col %}}
-##### **Dopo** il 2015 (*ES2015+*)
-
-- **Ciclo annuale** e **continuo** di rilascio
-- Da qui, il nome contiene l'anno solare di approvazione della versione
-  - ES2015
-  - ES2016
-  - ES2017 (con `async`/`await`!)
-  - ES2018, 19, 20...
-- nuova release ogni giugno di ogni anno!
-
-{{% /col %}}
-{{% /multicol %}}
-
-
-{{% /section %}}
-
----
-
-{{% section %}}
-
-<img class="exclude" style="max-width: 128px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F4%2F4c%2FTypescript_logo_2020.svg%2F1280px-Typescript_logo_2020.svg.png%3F_%3D20221110153201&f=1&nofb=1&ipt=08cec9d878c8b1f1d83073ea26221d4513bd6b711bcedccac791aefc9c9ad50a&ipo=images" />
-
-## **TS**
-### **T**ype**S**cript
-
----
-
-### I **problemi** di **JavaScript**
-
-{{% multicol %}}
-{{% col %}}
-- Tipizzazione **debole** e **dinamica**
-  - molti errori vengono scoperti solo a *run-time* (programma in esecuzione)
-- Comportamenti **imprevedibili**
-  - `[] + {}` $\rightarrow\ ?$
-  - `"5" - 1` $\rightarrow\ ?$
-- Difficoltà di **refactoring**
-  - progetti medio/grandi difficilmente manutenibili e scalabili
-- Mancanza di autocompletamento
-  - assenza di **IntelliSense**
-{{% /col %}}
-{{% col %}}
-![](imgs/js-hell.png)
-{{% /col %}}
-{{% /multicol %}}
-
----
-
-### **Perché** **T**ype**S**cript / 1
-
-{{% multicol %}}
-{{% col %}}
-- **Superset tipizzato di JavaScript**, open-source e sviluppato da Microsoft
-  - stesso progettista di C#!
-- **"Superset"**
-  - il codice JavaScript rimane *valido* in TypeScript
-- **Compatibilità** con i browser/JS runtime (Node, Bun, Deno...)
-  - il codice TypeScript deve essere convertito in codice JavaScript
-  - particolare compilatore chiamato "**transpiler**"
-    - sottile differenza dal concetto tradizionale di compilatore
-- **Zero overhead**
-  - la tipizzazione è presente solo a **compile-time**
-  - una volta "traspilato", **i tipi spariscono completamente** 
-{{% /col %}}
-{{% col class="d-flex justify-content-center" %}}
-<img src="imgs/superset.png">
-{{% /col %}}
-{{% /multicol %}}
-
----
-
-### **Perché** **T**ype**S**cript / 2
-
-{{% multicol %}}
-
-{{% col %}}
-#### Rilevamento errori <br> a **compile-time**
-
-Gli errori vengono segnalati ancor prima di avviare il programma.
-{{% /col %}}
-{{% col %}}
-#### Developer experience
-IntelliSense, documentazione inline delle funzioni, navigazione rapida del codice.
-{{% /col %}}
-{{% col %}}
-#### Refactoring e manutenibilità
-I tipi fungono da documentazione aggiornata, bassa probabilità di rompere codice con manovre di refactoring.
-{{% /col %}}
-
-{{% /multicol %}}
-
----
-
-### I tipi base
-
-{{% multicol %}}
-{{% col %}}
-- Tipi primitivi: 
-  - `string`, 
-  - `number`, 
-  - `boolean`, 
-  - `null`, 
-  - `undefined`
-{{% /col %}}
-{{% col %}}
-- Array e tuple: `T[]`, `[T, U]`
-  - per esempio: 
-    - `number[]`, 
-    - `[number, string]`
-{{% /col %}}
-{{% col %}}
-#### Type inference
-TS capisce il tipo di dato e lo inferisce ad una variabile, senza bisogno di annotarlo
-
-```ts
-let messaggio: string = "Ciao Mondo";
-
-// TS deduce automaticamente 'number'
-let count = 42; 
-
-// TS capisce che si tratta di 'number[]'
-let numbers = [1, 2, 3, 4, 5] 
-```
-{{% /col %}}
-
-{{% /multicol %}}
-
----
-
-### **Type** vs **Interface**
-
-{{% multicol %}}
-{{% col %}}
-#### **Interface**
-- Costrutto ideale per modellare oggetti, 
-- Estendibile con `extends`
-- Adatta per architetture ad oggetti e API pubbliche
-{{% /col %}}
-{{% col %}}
-#### **Type**
-- Costrutto versatile
-- Supporto alle operazioni **insiemistiche tra tipi**
-{{% /col %}}
-{{% /multicol %}}
-
---- 
-
-### Qualche esempio di `type` / 1
-
-#### Union (`|`) e Intersection (`&`)
-
-```ts
-// Union (OR): one of those possible values
-type RequestStatus = "idle" | "loading" | "success" | "error";
-
-// ---
-
-type Timestamped = {
-  createdAt: Date;
-  updatedAt: Date;
-};
-
-type Product = {
-  id: string;
-  title: string;
-  price: number;
-};
-
-// Intersection (AND): combines all properties from both types
-type TrackedProduct = Product & Timestamped;
-
-const item: TrackedProduct = {
-  id: "prod-101",
-  title: "Mechanical Keyboard",
-  price: 89.99,
-  createdAt: new Date(),
-  updatedAt: new Date(),
-};
-```
-
----
-
-### Qualche esempio di `type` / 2
-
-```ts
-type Action =
-  | { type: "LOGIN"; payload: { userId: string } }
-  | { type: "LOGOUT" }
-  | { type: "UPDATE_EMAIL"; payload: { newEmail: string } };
-
-function handleAction(action: Action) {
-  switch (action.type) {
-    case "LOGIN":
-      // TypeScript automatically narrows the type: payload and userId are guaranteed
-      console.log("Logged in user:", action.payload.userId);
-      break;
-    case "LOGOUT":
-      // payload does not exist on this branch
-      console.log("User logged out");
-      break;
-    case "UPDATE_EMAIL":
-      console.log("New email:", action.payload.newEmail);
-      break;
-  }
-}
-```
-
----
-
-### Qualche esempio di `type` / 3
-
-```ts
-type AppConfig = {
-  port: number;
-  host: string;
-  debugMode: boolean;
-};
-
-// Extracted union: "port" | "host" | "debugMode"
-type ConfigKey = keyof AppConfig;
-
-// Lookup type: resolves to number
-type PortType = AppConfig["port"];
-
-function getConfigValue(config: AppConfig, key: ConfigKey) {
-  return config[key];
-}
-```
-
----
-
-### Qualche esempio di `type` / 4
-
-#### Built-in types: `Partial<>`, `Pick<>`, `Omit<>`, `Record<>` 
-
-```ts
-type User = {
-  id: number;
-  username: string;
-  email: string;
-  passwordHash: string;
-};
-
-// 1. Partial: marks every field as optional (ideal for PATCH payloads)
-type UpdateUserDto = Partial<User>;
-
-// 2. Pick: selects only the specified keys
-type PublicProfile = Pick<User, "id" | "username">;
-
-// 3. Omit: excludes specific sensitive keys
-type SafeUser = Omit<User, "passwordHash">;
-
-// 4. Record: constructs an object type with specific keys and values
-type Permission = "read" | "write" | "admin";
-type RolePermissions = Record<Permission, boolean>;
-
-const guestPermissions: RolePermissions = {
-  read: true,
-  write: false,
-  admin: false,
-};
-```
-
----
-
-### Qualche esempio di `interface` / 1
-
-#### **Ereditarietà** su **più livelli**
-
-```ts
-interface BaseEntity {
-  id: string;
-  createdAt: Date;
-}
-
-// Single extension: Person inherits id and createdAt
-interface Person extends BaseEntity {
-  firstName: string;
-  lastName: string;
-  email: string;
-}
-
-// Chained extension: Employee inherits from Person (and transitively from BaseEntity)
-interface Employee extends Person {
-  salary: number;
-  role: "junior" | "mid" | "senior";
-  hiredAt: Date;
-}
-
-const developer: Employee = {
-  id: "emp-42",
-  createdAt: new Date("2024-01-01"),
-  firstName: "Jane",
-  lastName: "Doe",
-  email: "jane.doe@example.com",
-  salary: 85000,
-  role: "senior",
-  hiredAt: new Date("2024-03-01"),
-};
-```
-
----
-
-### Qualche esempio di `interface` / 2
-
-#### **Composizione** di interfacce
-
-```ts
-interface Sizable {
-  width: number;
-  height: number;
-}
-
-interface Stylable {
-  backgroundColor: string;
-  borderColor?: string;
-}
-
-interface Clickable {
-  onClick: (event: MouseEvent) => void;
-}
-
-// Composes three distinct behaviors into a single UI contract
-interface ButtonProps extends Sizable, Stylable, Clickable {
-  label: string;
-  disabled: boolean;
-}
-
-const submitButton: ButtonProps = {
-  width: 140,
-  height: 44,
-  backgroundColor: "#0070f3",
-  label: "Submit Form",
-  disabled: false,
-  onClick: (e) => console.log("Clicked at coordinates:", e.clientX, e.clientY),
-};
-```
-
----
-
-### Qualche esempio di `interface` / 3
-
-#### **Restringimento** / **sovrascrittura** delle proprietà
-
-```ts
-interface GenericItem {
-  id: string | number;
-  payload: unknown;
-}
-
-// Narrows 'id' strictly to string and provides a concrete shape for 'payload'
-interface ArticleItem extends GenericItem {
-  id: string;
-  payload: {
-    title: string;
-    tags: string[];
-  };
-}
-```
-
----
-
-### Funzioni tipizzate
-
-```ts
-function calcolaTotale(prezzo: number, sconto: number = 0): number {
-  return prezzo - sconto;
-}
-```
-
----
-
-### **Installazione** di TypeScript
-
-1) Assicurarsi di avere NodeJS installato 
-  > in un terminale, digitare `node --version` <br>
-  > (output atteso: una versione di node, tipo `v24.13.1`)
-2) All'interno di un progetto, sempre da terminale, scrivere
-  > `npm install -D typescript` <br>
-  > (`-D`: salva come dipendenza del progetto - equivale a `--save-dev`)
-3) Per compilare un file `.ts`: 
-  > `npx tsc app.ts`
-
----
-
-{{% multicol %}}
-{{% col %}}
-### **NodeJS**
-#### Il file `package.json`
-
-Identità del progetto, indicazione delle dipendenze necessarie, script eseguibili (`npm run dev`, `npm test`...)
-
-{{% callout %}}
-"Lista dei desideri, astratta e flessibile".
-{{% /callout %}}
-
-{{% /col %}}
-
-{{% col %}}
-### **NodeJS**
-#### Il file `package-lock.json`
-
-Dipendenze con versioni precise, URL di download, hash crittografico per certificare l'autenticità del file.
-
-{{% callout %}}
-"Fotografia del progetto, fissata e deterministica".
-{{% /callout %}}
-{{% /col %}}
-
-{{% col %}}
-### **TS**-Only
-#### Il file `.tsconfig`
-
-Cuore di ogni progetto TypeScript - configurazioni della logica del transpiler.
-
-{{% callout %}}
-Parametri importanti:
-1) `target`: versioni del JS in output;
-2) `strict: true`: abilita controlli rigorosi
-3) `moduleResolution`: gestisce import/export
-4) `noImplicitAny`: impedisce `any` impliciti
-{{% /callout %}}
-
-
 {{% /col %}}
 {{% /multicol %}}
 
