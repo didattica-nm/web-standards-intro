@@ -155,7 +155,7 @@ Tanti altri operatori!
 
 Combinazioni "notevoli" di più operatori raccolte nel **GHDB** (*Google Hacking Database*).
 
-<img src="image.png" class="w-50">
+<img src="imgs/ghdb.png" class="w-50">
 
 > Visita il sito: https://www.exploit-db.com/google-hacking-database
 

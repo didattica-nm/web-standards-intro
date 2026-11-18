@@ -1,10 +1,10 @@
 languageCode = "en-us"
-title = "A Hugo theme for creating Reveal.js presentations"
+title = "Web Standards intro: HTML, CSS, JavaScript"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
 # TODO: Insert repo name below here!
-baseURL = "https://nickolausenteaching.github.io/web-01/"
+baseURL = "https://didattica-nm.github.io/web-standards-intro/"
 # Example: baseURL = "https://<github pages base url>/<repo name>/"
 
 # This forces Hugo to make all links relative to the current page
