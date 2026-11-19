@@ -214,7 +214,35 @@ Combinazioni "notevoli" di più operatori raccolte nel **GHDB** (*Google Hacking
 
 ---
 
-## Come funziona un **browser**? / 2
+## Come funziona un **browser**?
+
+Il browser, oltre a gestire le *request/response HTTP*, è un **convertitore di documenti HTML**.
+
+<br>
+
+> È in grado di **capire** la sintassi di HTML e di **mostrare** (*to render*) a finestra il contenuto visuale di un documento.
+
+---
+
+## **D**ocument **O**bject **M**odel (**DOM**)
+
+Oggetto costruito nella memoria del browser che rappresenta, sotto forma di un **albero**, la **struttura** di un documento HTML.
+
+<iframe src="https://0xedward.github.io/dom-visualizer/" class="w-100" height="750">
+    
+</iframe>
+
+<small>Link allo strumento: https://0xedward.github.io/dom-visualizer/ || <a href="files/sample.html.txt" target="_blank">Codice HTML di esempio da incollare</a> || <a href="files/sample.html" target="_blank">Render finale</a> </small>
+
+---
+
+## Dal **codice** al **sito**.
+
+![](imgs/render.png)
+
+<br>
+
+<small>Da *MDN Docs, How browsers load websites* - https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_browsers_load_websites</small>
 
 {{% /section %}}
 
