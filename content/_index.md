@@ -228,11 +228,11 @@ Il browser, oltre a gestire le *request/response HTTP*, è un **convertitore di 
 
 Oggetto costruito nella memoria del browser che rappresenta, sotto forma di un **albero**, la **struttura** di un documento HTML.
 
-<iframe src="https://0xedward.github.io/dom-visualizer/" class="w-100" height="750">
+<iframe src="https://didattica-nm.github.io/dom-visualizer/" class="w-100" height="750">
     
 </iframe>
 
-<small>Link allo strumento: https://0xedward.github.io/dom-visualizer/ || <a href="files/sample.html.txt" target="_blank">Codice HTML di esempio da incollare</a> || <a href="files/sample.html" target="_blank">Render finale</a> </small>
+<small>Link allo strumento: https://didattica-nm.github.io/dom-visualizer/ (fork di **`@0xedward`**) || <a href="files/sample.html.txt" target="_blank">Codice HTML di esempio da incollare</a> || <a href="files/sample.html" target="_blank">Render finale</a> </small>
 
 ---
 
